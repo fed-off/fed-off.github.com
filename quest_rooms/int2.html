@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Предмет творчества</title>
+        <link href="styles/int2style.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="pic">
+                <img onclick="showClockText()" class="clock" src="images/int2/clock.png">
+            </div>
+            <div class="clockText hide"><p>Кажется, часы встали... Батарейки?</p></div>
+            <section>
+                <div class="cats one">
+                    <img class="cat coming" src="images/int2/cat_coming.png" alt="cat_coming">
+                    <p>
+                        Привет! <br>
+                        Я выучил несколько человеческих слов. <br>
+                        Мне нужна твоя помощь для повторения.
+                    </p>
+                </div>
+                <div class="cats two">
+                    <img class="cat searching" src="images/int2/cat_searching.png" alt="cat_searching">
+                    <p>
+                        Давай я буду называть слово,
+                        а ты будешь находить этот предмет? <br>
+                        Тогда я буду уверен, что правильно
+                        понимаю значения этих слов.
+                    </p>
+                </div>
+                <div class="cats three">
+                    <img class="cat reading" src="images/int2/cat_reading.png" alt="cat_reading">
+                    <p class="ten_of_ten">
+                        Итак, давай начнём! <br>
+                        Тебе нужно будет <br> 
+                        <i>найти 10 предметов</i>.<br><br>
+                        Первый предмет: 
+                        <b>Гитара</b>
+                    </p>
+                    <p class="nine_of_ten hide">
+                        Отлично! Мы нашли гитару. Осталось <br>
+                        <i>найти 9 предметов</i>.<br><br>
+                        Второй предмет:
+                        <b>Самолёт</b>
+                    </p>
+                    <p class="eight_of_ten hide">
+                        Какой-то он маленький, этот ваш "самолёт"... Осталось <br>
+                        <i>найти 8 предметов</i>.<br><br>
+                        Третий предмет:
+                        <b>Велосипед</b>
+                    </p>
+                    <p class="seven_of_ten hide">
+                        И велосипед будто для мышей! Осталось <br>
+                        <i>найти 7 предметов</i>.<br><br>
+                        Четвёртый предмет:
+                        <b>Ваза</b>
+                    </p>
+                    <p class="six_of_ten hide">
+                        Какая вместительная ваза! Мяу! Осталось <br>
+                        <i>найти 6 предметов</i>.<br><br>
+                        Пятый предмет:
+                        <b>Газета</b>
+                    </p>
+                    <p class="five_of_ten hide">
+                        Не люблю новости - там ей и место! Осталось <br>
+                        <i>найти 5 предметов</i>.<br><br>
+                        Шестой предмет:
+                        <b>Радиатор</b>
+                    </p>
+                    <p class="four_of_ten hide">
+                        Эта штука классно греет, зимой мне тепло. Осталось <br>
+                        <i>найти 4 предмета</i>.<br><br>
+                        Седьмой предмет:
+                        <b>Лиса</b>
+                    </p>
+                    <p class="three_of_ten hide">
+                        Лис мы держим только на картине: они ведь - собаки! Осталось <br>
+                        <i>найти 3 предмета</i>.<br>
+                        Восьмой предмет:
+                        <b>Телефон</b>
+                    </p>
+                    <p class="two_of_ten hide">
+                        А как на нём в змейку играть? Бесполезная штука! Осталось <br>
+                        <i>найти 2 предмета</i>.<br>
+                        Девятый предмет:
+                        <b>Люстра</b>
+                    </p>
+                    <p class="one_of_ten hide">
+                        Весёлая качеля! Сейчас уже не допрыгну, но в юности... Осталось 
+                        <i>найти последний предмет</i>.<br>
+                        Десятый предмет:
+                        <b>Робот</b>
+                    </p>  
+                </div>
+                <div title="guitar" onclick="quest1()" class="quest_one"></div>
+                <div title="airplan" onclick="quest2()" class="quest_two hide"></div>
+                <div title="bike" onclick="quest3()" class="quest_three hide"></div>
+                <div title="vase" onclick="quest4()" class="quest_four hide"></div>
+                <div title="newspaper" onclick="quest5()" class="quest_five hide"></div>
+                <div title="radiator" onclick="quest6()" class="quest_six hide"></div>
+                <div title="fox" onclick="quest7()" class="quest_seven hide"></div>
+                <div title="phone" onclick="quest8()" class="quest_eight hide"></div>
+                <div title="chandelier" onclick="quest9()" class="quest_nine hide"></div>
+                <div title="robot" onclick="quest10()" class="quest_ten hide"></div>
+                <div class="cats four hide">
+                    <img class="cat man" src="images/int2/cat_man.png" alt="cat_man">
+                    <p class="what_name hide">
+                        Вот круть! Теперь я почти как настоящий человек. <br>
+                        А как тебя зовут? <input type="text"> <button onclick="ty()">Познакомиться!</button>
+                    </p>
+                    <p class="nice_meet hide"></p>
+                </div>
+                <img class="money hide" src="images/int2/money.png" alt="cat's money" onclick="money()">
+            </section>
+        </main>
+        <a class="other" title="Предыдущий интерьер" href="int1.html"><img src="images/leftarrow.png" width="60px"></a>
+        <a class="back" title="На главную" href="index.html"><img src="images/leftarrow.png" width="60px"></a>
+        <script src="script.js"></script>
+    </body>
+</html>

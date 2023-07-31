@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Предмет творчества</title>
+        <link href="styles/int1style.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            
+            <p class="e_rror"><span><code>
+                11010000 10011110 11010001 10001000 11010000 10111000 
+                11010000 10110001 11010000 10111010 11010000 10110000 
+                100001 100000 11010000 10100010 11010001 10000000 11010000 
+                10110101 11010000 10110001 11010001 10000011 11010000 
+                10110101 11010001 10000010 11010001 10000001 11010001 
+                10001111 100000 11010000 10111010 11010000 10110000 11010000 
+                10111011 11010000 10111000 11010000 10110001 11010001 
+                10000000 11010000 10111110 11010000 10110010 11010000 
+                10111010 11010000 10110000 101110</code></span>
+                <button class="what" onclick="step_one()">Что происходит?</button>
+            </p>
+            <p class="welcome hide">
+                Добро пожаловать в Умный Домик! <br>
+                У меня сбились настройки и
+                требуется калибровка. Поможешь? <br>
+                <button class="start" onclick="step_two()">Конечно!</button>
+                <button class="skip" onclick="back()">Не хочу!</button>
+            </p>
+            <p class="task one1 hide">
+                Отлично! Найди для меня <br> 
+                <b>дверной 
+                <span><code>11010000 10110011 11010000 10111011 
+                    11010000 10110000 11010000 10110111</code></span>
+                    ок</b>
+            </p>
+            
+            <p class="task two1 hide">
+                <i>Дверной глазок</i> обновлён в базе. <br> 
+                Теперь мне нужно найти <br>
+                <b>керосин
+                    <span><code>11010000 10111110 11010000 10110010 11010001 
+                        10000011 11010001 10001110 100000 11010000 10111011 
+                        11010000 10110000 11010000 10111100</code></span>
+                    пу
+                </b>.
+            </p>
+            
+            <p class="task three1 hide">
+                <i>Керосиновая лампа</i> обновлена. <br>
+                Где находится 
+                <b>
+                    <span><code>11010000 10110010 11010000 10110101 11010001 
+                        10001000 11010000 10110000 11010000 10111011</code></span>
+                    ка</b>?
+            </p>
+            
+            <p class="task four1 hide">
+                <i>Вешалка</i> обновлена. <br>
+                Данные об <b>объекте в подсвечнике</b> утеряны. <br>
+                Помоги мне найти название в базе и восстановить связь с этим <b>объектом</b>.
+            </p>
+
+            <p class="help hide">
+                Введите название объекта <br><br>
+                <input class="name_unk">
+                <button class="name1" onclick="name1()">Задать</button>
+            </p>
+            <p class="help wrong hide">
+                ОШИБКА! Код не распознан <br><br>
+                <button class="again" onclick="button_rep()">Повторить</button>
+            </p>
+
+            <p class="thanks hide" onclick="ending()">Калибровка выполнена! Спасибо!</p>
+            
+            <div title="Дверной глазок" class="door_eye hide" onclick="step_three()"></div>
+            <div title="Керосиновая лампа" class="lamp hide" onclick="step_four()"></div>
+            <div title="Вешалка" class="hanger hide" onclick="step_five()"></div>
+            <div title="неизвестный объект" class="candle hide" onclick="step_six()"></div>
+            
+            <a class="i" title="Бинарный дешифратор" href="https://decodeit.ru/binary" target="_blank"><img src="images/int1/help.png" alt="info"></a>
+        </main>
+        <a class="back" title="На главную" href="index.html"><img src="images/leftarrow.png" width="60px"></a>
+        <a class="other" title="Следующий интерьер" href="int2.html"><img src="images/leftarrow.png" width="60px"></a>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,312 @@
+html,
+body {
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background: url(../images/int2.jpg) no-repeat center -25px;
+    background-size: 100%;
+} 
+
+.hide {
+    display: none;
+}
+
+div.pic img.clock {
+    width: 7.5%;
+    position: fixed;
+    top: 4vh;
+    left: 81.9vw;
+    border-radius: 100%;
+
+    transition: 0.3s;
+}
+div.pic img.clock:hover {
+    width: 8.5%;
+    top: 3.7vh;
+    left: 81.5vw;
+
+    box-shadow: 0 0 10px #ff0000;
+}
+
+div.clockText {
+    position: fixed;
+    top: 6vh;
+    left: 69vw;
+    border-radius: 10px;
+    width: 180px;
+    box-shadow: 5px -3px 10px rgb(0, 0, 0);
+
+    background-color: rgba(73, 77, 78, 0.9);
+
+    opacity: 0;
+    animation: ani 3s forwards;
+}
+div.clockText p {
+    font-size: 15px;
+    color: white;
+    padding: 0 10px;
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+
+.cat {
+    width: 15vw;
+    position: fixed;
+}
+div.cats p {
+    width: 200px;
+    height: 100px;
+    background-color:rgba(73, 77, 78, 0.9);
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    position: fixed;
+    box-shadow: 5px -3px 10px rgb(0, 0, 0);
+}
+div.cats.three p,
+div.cats.four p {
+    top: 40vh;
+    left: 38vw;
+}
+
+.coming {
+    top: 73vh;
+    right: 3vw;
+    animation: cat1 10s forwards;
+
+}
+@keyframes cat1 {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+.coming + p {
+    top: 60vh;
+    right: 16vw;
+    animation: cat1t 10s forwards;
+}
+@keyframes cat1t {
+    0% {opacity: 0;}
+    10% {opacity: 0;}
+    20% {opacity: 1;}
+    80% {opacity: 1;}
+    90% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.searching {
+    top: 71vh;
+    right: 30vw;
+    width: 16vw;
+    animation: cat2 20s forwards;
+}
+@keyframes cat2 {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    55% {opacity: 1;}
+    95% {opacity: 1;}
+    100% {opacity: 0;}
+}
+section div.cats .searching + p {
+    top: 60vh;
+    right: 43vw;
+
+    height: 130px;
+
+    animation: cat2t 20s forwards;
+}
+@keyframes cat2t {
+    0% {opacity: 0;}
+    55% {opacity: 0;}
+    60% {opacity: 1;}
+    90% {opacity: 1;}
+    95% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.reading {
+    top: 51vh;
+    right: 36vw;
+    width: 13vw;
+    animation: cat3 25s forwards; 
+}
+@keyframes cat3 {
+    0% {opacity: 0;}
+    80% {opacity: 0;}
+    84% {opacity: 1;}
+    100% {opacity: 1;}    
+}
+div.cats.three p.ten_of_ten {
+    animation: cat3t 25s forwards; 
+}
+@keyframes cat3t {
+    0% {opacity: 0;}
+    84% {opacity: 0;}
+    88% {opacity: 1;}
+    100% {opacity: 1;}    
+}
+
+div.cats p.nine_of_ten,
+div.cats p.eight_of_ten,
+div.cats p.seven_of_ten,
+div.cats p.six_of_ten,
+div.cats p.five_of_ten,
+div.cats p.four_of_ten,
+div.cats p.three_of_ten,
+div.cats p.two_of_ten,
+div.cats p.one_of_ten,
+div.cats p.what_name,
+div.cats p.nice_meet,
+div.cats.four img.cat.man {
+    animation: quest 2s forwards;
+}
+@keyframes quest {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.man {
+    top: 51vh;
+    right: 36vw;
+    width: 13vw;
+}
+.man + p {
+    top: 40vh;
+    left: 38vw;
+}
+
+div.quest_one {
+    position: fixed;
+    top: 48vh;
+    right: 15.4vw;
+
+    width: 2.5vw;
+    height: 30vh;
+}
+div.quest_two {
+    position: fixed;
+    top: 54vh;
+    left: 0vw;
+
+    width: 6vw;
+    height: 7vh;
+}
+div.quest_three {
+    position: fixed;
+    top: 39vh;
+    left: 64.5vw;
+
+    width: 5.5vw;
+    height: 6.5vh;
+}
+div.quest_four {
+    position: fixed;
+    top: 32vh;
+    left: 25.5vw;
+
+    width: 2.3vw;
+    height: 5.2vh;
+}
+div.quest_five {
+    position: fixed;
+    top: 74vh;
+    left: 32vw;
+
+    width: 4vw;
+    height: 5vh;
+}
+div.quest_six {
+    position: fixed;
+    top: 68vh;
+    left: 1.5vw;
+
+    width: 9vw;
+    height: 24vh;
+}
+div.quest_seven {
+    position: fixed;
+    top: 24vh;
+    left: 81vw;
+
+    width: 5vw;
+    height: 6.5vh;
+}
+div.quest_eight {
+    position: fixed;
+    top: 61.5vh;
+    left: 28vw;
+
+    width: 4.5vw;
+    height: 6vh;
+}
+div.quest_nine {
+    position: fixed;
+    top: 5vh;
+    left: 47vw;
+
+    width: 7.5vw;
+    height: 18vh;
+}
+div.quest_ten {
+    position: fixed;
+    top: 45vh;
+    left: 30vw;
+
+    width: 3.7vw;
+    height: 9.5vh;
+}
+
+div.cats.four p.what_name input {
+    margin-left: -3px;
+    width: 100%;
+}
+div.cats.four p.what_name button {
+    margin-left: 45px;
+}
+div.cats.four button {
+    margin-left: 62px;
+}
+
+section img.money{
+    width: 6vw;
+    position: fixed;
+    top: 67vh;
+    left: 52vw;
+}
+
+.other {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+}
+
+.other img {
+    transition: 0.3s;
+}
+.other img:hover {
+    width: 13%;
+}
+
+.back {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    transform: rotate(180deg);
+}
+
+.back img {
+    transition: 0.3s;
+}
+.back img:hover {
+    width: 13%;
+}
