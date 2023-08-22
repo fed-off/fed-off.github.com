@@ -1,0 +1,151 @@
+body {
+    font-family: 'Playfair Display', serif;
+    color: #2D2829;
+    font-size: 20px;
+    line-height: 27px; /* 135% */
+
+    background-color: #FBEBEA;;
+}
+
+.site-navigation-item a {
+    color: #2D2829;
+    font-size: 13px;
+    line-height: 16px; /* 123.077% */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.site-navigation-item a.active {
+    color: #f50049;
+}
+
+.phone {
+    color: #2D2829;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 16px; /* 123.077% */
+    text-decoration: none;
+}
+
+.promo h1 {
+    font-size: 78px;
+    line-height: 70px; /* 89.744% */
+}
+
+.promo p {
+    font-size: 40px;
+    font-style: italic;
+    line-height: 53px; /* 132.5% */
+}
+
+.button {
+    color: #FFF;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 27px; /* 207.692% */
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: #F50049;
+}
+
+.features {
+    font-size: 14px;
+    line-height: 18px; /* 128.571% */
+}
+
+.catalog h2 {
+    font-size: 40px;
+    line-height: 66px; /* 165% */
+}
+
+.catalog h3 {
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+}
+  
+.catalog a {
+   color: #2D2829;
+   font-size: 18px;
+   line-height: 24px; /* 133.333% */
+   text-decoration: none;
+}
+
+.reviews h2 {
+    font-size: 40px;
+    line-height: 66px; /* 165% */
+    text-align: center;
+}
+
+.reviews h3 {
+    font-size: 27px;
+    line-height: 36px; /* 133.333% */
+}
+
+.review .review-info {
+    font-size: 25px;
+    line-height: 33px; /* 132% */
+}
+
+.advantages {
+    background: url("../images/berries.png") no-repeat left center;
+}
+
+.advantages h2 {
+    font-size: 40px;
+    line-height: 66px; /* 165% */
+    text-align: center;
+}
+
+.advantages-text {
+    font-size: 30px;
+    font-style: italic;
+    line-height: 40px; /* 133.333% */
+    text-align: center;
+}
+
+.advantages-list h3 {
+    font-size: 20px;
+    line-height: 27px; /* 135% */
+}
+
+.contacts h2 {
+    font-size: 40px;
+    line-height: 66px; /* 165% */
+}
+
+.contact-item h3 {
+    font-size: 20px;
+    line-height: 27px; /* 135% */
+}
+
+.contact-item address {
+    font-style: normal;
+}
+
+.contact-item a {
+    color: #2D2829;
+    text-decoration: none;
+}
+
+.social-item {
+    background-color: #FFF;
+}
+
+.main-footer {
+    background-color: #E8E8E8;
+    color: #888;
+}
+
+.footer-navigation-item a {
+    color: #2D2829;
+    font-size: 13px;
+    line-height: 16px; /* 123.077% */
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 13px;
+    line-height: 16px; /* 123.077% */
+    text-transform: uppercase;
+}
