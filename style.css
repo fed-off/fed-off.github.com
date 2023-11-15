@@ -5,6 +5,7 @@ body {
 }
 
 nav {
+    display: flex;
     height: 100px;
     background-color: #292929;
 }
@@ -18,7 +19,7 @@ nav {
     left: 15px;
 }
 
-a.quest_rooms {
+ul.nav-list a {
     color: #f6f6f6;
     text-transform: uppercase;
     text-decoration: none;
