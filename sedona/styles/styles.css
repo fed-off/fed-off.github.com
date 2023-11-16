@@ -1,0 +1,2061 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 3 version
+*/
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* ----- ----- самые крупные блоки ----- ----- */
+/* ----- группа стилей к крупному блоку ----- */
+/* описание правила */
+/* пояснение решения */
+
+/* ----- ----- общие стили ----- ----- */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0 40px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  word-wrap: break-word;
+  background-color: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* добавляет выравнивание текста хедеру, футеру и всем элементам главной страницы */
+/* весь текст index стилизован с выравниванием по центру */
+.page-header,
+.index-main,
+.page-footer {
+  text-align: center;
+}
+
+.index-main,
+.catalog-main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/* ----- стили для кнопок ----- */
+.button {
+  padding: 8px 50px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-main {
+  background-color: #756157;
+}
+
+.button-brand {
+  background-color: #82b3d3;
+}
+
+.button-applied {
+  background-color: #7db54f;
+}
+
+.button-transparent {
+  background-color: transparent;
+}
+
+.button-weight {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/* ----- состояния для кнопок ----- */
+/* неактивные кнопки */
+.button-brand:disabled,
+.button-main:disabled,
+.button-applied:disabled {
+  background-color: #e5e5e5;
+  cursor: default;
+}
+
+.button-transparent:disabled {
+  opacity: 0.1;
+  cursor: default;
+}
+
+/* основные кнопки */
+.button-main:focus-visible,
+.button-main:not(:disabled):hover {
+  background-color: #615048;
+}
+
+.button-main:not(:disabled):active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+/* брендовые кнопки */
+.button-brand:focus-visible,
+.button-brand:not(:disabled):hover {
+  background-color: #68a2ca;
+}
+
+.button-brand:not(:disabled):active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82b3d3;
+}
+
+/* зеленые кнопки */
+.button-applied:focus-visible,
+.button-applied:not(:disabled):hover {
+  background-color: #6c9e42;
+}
+
+.button-applied:not(:disabled):active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7db54f;
+}
+
+/* прозрачные кнопки */
+.button-transparent:not(:disabled):hover {
+  opacity: 0.6;
+}
+
+.button-transparent:not(:disabled):active {
+  opacity: 1;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* ----- стили для полей ввода ----- */
+.field {
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* ----- состояние для полей ввода ----- */
+.field:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  opacity: 0.3;
+}
+
+.field:focus,
+.field:not(:disabled):hover {
+  background-color: #e6e6e6;
+}
+
+/* ----- плейсхолдер ----- */
+:-ms-input-placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+::-ms-input-placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+::placeholder,
+::-ms-input-placeholder,
+:-ms-input-placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
+/* ----- стили для заголовков секций ----- */
+.section-lead {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.section-description {
+  margin: 0;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* ----- стили для карт ----- */
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 400px;
+  min-height: 385px;
+  padding: 102px 84px;
+}
+
+/* стилизует заголовок карточки */
+/* насыщенность текста наследуется от заголовочного тега */
+.card-title {
+  margin-top: 0;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.card-description {
+  margin: 0;
+}
+
+/* ----- ----- index.html ----- ----- */
+/* ----- стили для page-header ----- */
+/* задает пространство шапке, выравнивает лого и навигацию, переносит при переполнении */
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 70px;
+}
+
+/* задает приоритет и отступы ссылке логотипа */
+/* display block и width не нужны, т.к. это флекс-элемент */
+.logo-link {
+  z-index: 1;
+  position: relative;
+  margin: 0 28px -6px 0;
+}
+
+.logo-link[href]:focus-visible::before,
+.logo-link[href]:hover::before {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 110%;
+  height: 110%;
+  background-color: rgba(117, 97, 87, 0.6);
+  -webkit-mask-image: url("../images/logo-sedona.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-image: url("../images/logo-sedona.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.logo-link[href]:active::before {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+/* задает display картинке логотипа */
+.logo {
+  display: block;
+  width: 140px;
+  height: 70px;
+}
+
+/* выравнивает блок навигации */
+/* width не дает сжиматься до размера контента */
+/* align-items не позволяется растягиваться спискам в случае, если появляется новая строка */
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 892px;
+}
+
+/* сбрасывает браузерные стили, выравнивает списки навигации */
+.navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation-list:nth-child(1) {
+  margin-right: auto;
+}
+
+/* стилизует ссылки навигации */
+.navigation-link {
+  position: relative;
+  display: block;
+  padding: 20px 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-link[href]:focus-visible {
+  color: #756157;
+  outline-offset: -2px;
+}
+
+.navigation-link[href]:hover {
+  color: #756157;
+}
+
+.navigation-link[href]:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+/* стилизует текущую ссылку */
+.current-navigation-link::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 16px;
+  right: 16px;
+  height: 2px;
+  background-color: #756257;
+}
+
+/* выравнивает по правой стороне и задает размер */
+.navigation-user {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 140px;
+}
+
+/* задает размеры ссылкам в правой части */
+/* min тк контент может смениться на текст */
+.navigation-user .navigation-link {
+  min-width: 44px;
+  padding: 22px 12px;
+}
+
+
+/* создает и позиционирует псевдоэлемент */
+.navigation-user .navigation-link::before {
+  content: "";
+  display: block;
+  background-color: #000000;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+.navigation-user .navigation-link:focus-visible::before,
+.navigation-user .navigation-link:hover::before {
+  background-color: #756257;
+}
+
+.navigation-user .navigation-link:active::before {
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+/* добавляет фон с иконкой поиска */
+.search-icon::before {
+  width: 18.5px;
+  height: 18.5px;
+  margin: 1px 0.5px 0.5px 1px;
+  -webkit-mask-image: url("../images/interface/search.svg");
+  mask-image: url("../images/interface/search.svg");
+}
+
+/* добавляет фон с иконкой избранного */
+.favorites-icon::before {
+  width: 19px;
+  height: 17px;
+  margin: 2px 1px 1px 0;
+  -webkit-mask-image: url("../images/interface/favorites.svg");
+  mask-image: url("../images/interface/favorites.svg");
+}
+
+/* оформляет и позиционирует количество избранных элементов */
+.amount-favorites {
+  position: absolute;
+  white-space: nowrap;
+  top: 11px;
+  left: 19px;
+  min-width: 20px;
+  padding: 5px 4px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
+}
+
+/* описывает грид контейнер для красивого переполнения кнопок */
+/* кнопки добавляются только в столбик (этим решается проблема слипания кнопок), грид не даёт схлопываться отступам для правильной центровки */
+/* единственный минус - если кнопка одна, и внутри добавляется ещё одна строка, то маргины расширят хедер */
+/* во избежании появления второй строки в кнопке, по ширине был оставлен запас */
+/* gap'ы, флексы, инлайн-блоки при переполнении расширяют контейнер до максимальных размеров, а он у нас с запасом, получается лишнее пространство. Любая возможность добавить кнопки в одну строку рождает цепочку некрасивостей в случае переполнения - если какая-то из кнопок все-таки перенесется. Если нужны две кнопки на одной строке - пишите - заверстаем по-красоте! */
+/* перебрал сотню вариантов, убил с десяток часов, и пришёл к выводу, что это лучший вариант. Бомбит уже, чес-слово... */
+/* align не дает кнопке вытягиваться в высоту при переполнении в других блоках */
+.button-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-left: 20px;
+  max-width: 230px;
+}
+
+/* выравнивает кнопку хочу сюда */
+.button-wanna-here {
+  max-width: 230px;
+  margin: 14px 0;
+  padding: 8px 34px;
+}
+
+/* ----- cтили для hero ----- */
+/* оформляет блок герой */
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 485px;
+  padding: 51px 70px 82px;
+  color: #ffffff;
+  background-color: #7394aa;
+  background-image: url("../images/hero-flag.svg"), url("../images/hero-background.jpg");
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: bottom, center;
+}
+
+/* выравнивает приветственное изображение */
+.hero-img {
+  display: block;
+  width: 458px;
+  height: 352px;
+}
+
+/* ----- cтили для advantages -----  */
+/* задает пространство секции вводного текста преимуществ */
+/* padding блоку (вместо margin параграфу) для того, чтобы при добавлении текста, отступ между текстом и карточкой всегда не менялся */
+.advantages {
+  padding-top: 69px;
+}
+
+/* добавляет отступ заголовку преимуществ */
+.advantages-lead {
+  margin-bottom: 25px;
+  padding: 0 200px;
+}
+
+/* добавляет отступ описанию преимуществ */
+.advantages-description {
+  margin-bottom: 16px;
+  padding: 0 70px;
+}
+
+/* выравнивает список преимуществ, сбрасывает стили списка */
+.advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  margin-top: 90px;
+  padding: 0;
+  list-style: none;
+}
+
+/* добавляет фон нечетным карточкам преимуществ */
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* добавляет фон четным карточкам преимуществ */
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* выравнивает карточку преимуществ с изображением, задает цвет текста и фона для карты */
+/* вложенность для повышения специфичности */
+.advantages-list .card-saturated {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+}
+
+/* позиционирует заголовок карты, сбрасывает отступ */
+.card-title-advantages {
+  margin-bottom: 0;
+}
+
+/* наследует цвет текста для заголовка большой карточки */
+/* черный цвет текста наследуется от класса section-lead */
+.card-saturated .card-title-advantages {
+  color: inherit;
+}
+
+/* выравнивает изображение карточки преимуществ */
+.advantages-img {
+  display: block;
+  width: 800px;
+  height: 385px;
+}
+
+/* разворачивает контент каждой второй большой карточки при структуре (saturated/card/card/card...) */
+/* прописать каждому второму li.saturated через nth-child и nth-of-type не получилось */
+.advantages-item:nth-child(8n+5) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+/* создает и выравнивает декоративное подчеркивание заголовку */
+.title-underline::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin: 30px auto 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* меняет цвет подчеркивания у заголовков saturated */
+.card-saturated .title-underline::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* задает отступ после декоративного подчеркивания заголовка */
+.title-underline {
+  margin-bottom: 30px;
+}
+
+/* ----- cтили для recommendations ----- */
+/* задает пространство в блоке рекомендаций */
+.recommendations {
+  padding-top: 64px;
+}
+
+/* задает отступ заголовку секции рекомендаций */
+.recommendations-lead {
+  margin-bottom: 20px;
+  padding: 0 200px;
+}
+
+.recommendations-description {
+  margin-bottom: 16px;
+  padding: 0 70px;
+}
+
+/* выравнивает список рекомендаций и обнуляет браузерные стили */
+.recommendations-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0;
+  margin-top: 64px;
+  padding: 0;
+  list-style: none;
+}
+
+/* задает пространство карточке рекомендаций */
+.recommendations-item {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 80px 85px;
+}
+
+/* задает отступы заголовку карты преимуществ */
+.card-title-recommendations {
+  margin-bottom: 30px;
+}
+
+/* создает псевдоэлемент для карточки рекомендаций */
+.recommendations-item::before {
+  content: "";
+  display: block;
+  width: 75px;
+  height: 72px;
+  margin: 0 auto 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* добавляет и выравнивает иконку домика в карту преимуществ */
+/* обращение по nth-child не подойдёт, тк контент может измениться и иконка уже будет не в тему */
+.card-residence::before {
+  position: relative;
+  left: 1px;
+  background-image: url("../images/icons/house.svg");
+}
+
+/* добавляет иконку бургера в карту преимуществ */
+.card-food::before {
+  background-image: url("../images/icons/burger.svg");
+}
+
+/* добавляет и выравнивает иконку подарка в карту преимуществ */
+.card-souvenirs::before {
+  position: relative;
+  left: 1px;
+  height: 76px;
+  margin-top: -1px;
+  margin-bottom: 29px;
+  background-image: url("../images/icons/present.svg");
+}
+
+/* задает цвет фона каждой нечетной карточке преимуществ */
+.recommendations-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+/* ----- cтили для hotel-search ----- */
+/* задает пространство блоку поиска гостиниц */
+.hotel-search {
+  padding: 96px 70px;
+}
+
+/* задает отступ заголовку поиска гостиницы */
+.hotel-search-lead {
+  margin-bottom: 20px;
+  padding: 0 130px;
+}
+
+/* добавляет отступ снизу, чтобы при переполнении и с тем же классом текст не слипался */
+.hotel-search-descroption {
+  margin-bottom: 16px;
+}
+
+/* задает display и отступ кнопке поиска гостиниц */
+/* margin-top кнопке, т.к. этот отступ всегда должен быть перед кнопкой, даже если добавится текст */
+/* ширина кнопки ограничена шириной предыдущего текста для стилевого единообразия */
+.button-hotel-search {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 600px;
+  margin: 54px auto 0;
+}
+
+/* ----- стили для секции рассылки ----- */
+/* задает пространство секции рассылки */
+.newsletter {
+  padding: 96px 70px 104px;
+}
+
+/* задает фон и цвет текста секции рассылки */
+.newsletter-background {
+  color: #ffffff;
+  background-color: #93aeb9;
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* наследует цвет текста для заголовка рассылки только для блока с фоном */
+.newsletter-background .newsletter-lead {
+  color: inherit;
+}
+
+/* задает отступ заголовку рассылки */
+.newsletter-lead {
+  margin-bottom: 20px;
+  padding: 0 130px;
+}
+
+/* добавляет отступ снизу, чтобы при переполнении и с тем же классом текст не слипался */
+.newsletter-description {
+  margin-bottom: 16px;
+}
+
+/* задает display и отступ формы */
+.newsletter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 55px;
+}
+
+.field-subscribe {
+  min-width: 452px;
+  min-height: 52px;
+  font-weight: 400;
+  border-radius: 4px 0 0 4px;
+}
+
+/* обнуляет левые скругления у кнопки, соединенной с полем */
+.button-newsletter {
+  border-radius: 0 4px 4px 0;
+  max-width: 452px;
+}
+
+/* ----- стили для footer-wrapper ----- */
+/* выравнивает наполнение нижней части подвала */
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 40px 70px 30px;
+}
+
+/* описывает флексбоксом блоки в футере */
+.footer-align {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* описывает флексбоксом ссылки в футере */
+.footer-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+}
+
+/* задает размеры секции социальных сетей и выравнивает */
+.social {
+  width: 282px;
+  margin-right: auto;
+}
+
+/* сбрасывает браузерные настройки списку социальных сетей */
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* задает размеры ссылкам социальных сетей */
+.social-link {
+  min-width: 47px;
+}
+
+.social-link:focus-visible::before,
+.social-link:hover::before {
+  background-color: #68a2ca;
+}
+
+.social-link:active::before {
+  background-color: rgba(104, 162, 202, 0.3);
+}
+
+/* создает и описывает псевдоэлемент ссылке социальных сетей */
+.social-link::before {
+  content: "";
+  position: relative;
+  top: -1px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+}
+
+/* создает и выравнивает псевдоэлемент с иконкой вк */
+.vk::before {
+  width: 24px;
+  height: 14px;
+  background-color: #83b3d3;
+  -webkit-mask-image: url("../images/icons/vkontakte.svg");
+  mask-image: url("../images/icons/vkontakte.svg");
+}
+
+/* создает и выравнивает псевдоэлемент с иконкой тг */
+.tg::before {
+  top: -2px;
+  width: 18px;
+  height: 16px;
+  background-color: #83b3d3;
+  -webkit-mask-image: url("../images/icons/telegram.svg");
+  mask-image: url("../images/icons/telegram.svg");
+}
+
+/* создает и выравнивает псевдоэлемент с иконкой ютуб */
+.yt::before {
+  left: 1px;
+  width: 22px;
+  height: 17px;
+  background-color: #83b3d3;
+  -webkit-mask-image: url("../images/icons/youtube.svg");
+  mask-image: url("../images/icons/youtube.svg");
+}
+
+/* выравнивает блок с контактами по центру */
+.contacts {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 450px;
+  margin: 0 auto;
+}
+
+/* назначает стили ссылке номера телефона */
+.phone-link {
+  max-width: 450px;
+  padding: 5px;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.phone-link:focus-visible,
+.phone-link:hover {
+  color: #756157;
+}
+
+.phone-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+/* выравнивает блок с партнерами по правой стороне */
+.partners {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  width: 254px;
+  margin-left: auto;
+}
+
+/* задает display логотипу партнеров */
+.academy-logo {
+  display: block;
+  width: 115px;
+  height: 33px;
+  fill: #000000;
+}
+
+.academy-link:focus-visible .academy-logo,
+.academy-link:hover .academy-logo {
+  fill: #756157;
+}
+
+.academy-link:active .academy-logo{
+  fill: rgba(117, 97, 87, 0.3);
+}
+
+/* ----- ----- catalog.html ----- -----  */
+/* ----- стили для catalog-header ----- */
+/* задает пространство и цвет текста всему блоку, добавляет фон */
+/* без высоты чутка растягивается и нарушает pperfect */
+.catalog-header {
+  padding: 35px 70px 70px;
+  color: #ffffff;
+  background-color: #697e8d;
+  background-image: url("../images/filters-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* описывает стили для заголовка страницы */
+.catalog-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+/* выравнивает список хлебных крошек */
+/* максимальная ширина чуть больше ширины заголовка, потом перенос */
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  max-width: 650px;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+/* описывает стили ссылкок в хлебных крошках */
+.breadcrumbs-link {
+  position: relative;
+  display: block;
+  min-width: 13px;
+  font-size: 16px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/* состояния для хлебных крошек */
+.breadcrumbs-link[href]:hover {
+  opacity: 0.6;
+}
+
+.breadcrumbs-link[href]:active {
+  opacity: 0.3;
+}
+
+/* задает внутренний отступ всем li крошек кроме первого */
+/* это позволяет избежать выпадения декоративной стрелки за padding секции-предка при переносе из-за переполнения */
+.breadcrumbs-item:not(:first-child) {
+  position: relative;
+  padding-left: 18px;
+}
+
+.breadcrumbs-item:first-child .breadcrumbs-link {
+  padding: 5px;
+  margin: -5px;
+}
+
+/* добавляет и выравнивает иконку (относительного первого li) для ссылки на главную в крошках */
+.breadcrumbs-item:first-child .breadcrumbs-link::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 21px;
+  margin-top: -1px;
+  background-image: url("../images/interface/home-link.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* добавляет и выравнивает стрелку между ссылками в крошках перед каждым li, кроме первого */
+.breadcrumbs-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 8px;
+  height: 20px;
+  background-image: url("../images/interface/arrowright.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* ----- стили для catalog-filter ----- */
+/* выравнивает блок с фильтрами */
+.catalog-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 71px;
+}
+
+/* выравнивает список чекбоксов и радиокнопок */
+.catalog-filter-list {
+  max-width: 175px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-filter-list:not(:last-child),
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.label-wrapper-word {
+  max-width: 134px;
+}
+
+/* выравнивает правую сторону фильтров */
+/* min-width c запасом исключает перенос элементов при переполнении соседнего блока */
+.catalog-filter-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 70px;
+  max-width: 560px;
+  margin-left: auto;
+}
+
+/* сбрасывает настройки браузера для fieldset */
+.catalog-filter-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* описывает стили для легенд */
+.catalog-filter-title {
+  max-width: 175px;
+  margin-bottom: 32px;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.price-area .catalog-filter-title {
+  max-width: 288px;
+}
+
+/* описывает, позиционирует чекбокс */
+.control-input {
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+/* отключен */
+.control-input:disabled {
+  opacity: 0.1;
+}
+
+/* при отключении инпута нужно добавить этот класс лейблу */
+.control-label-disabled {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+/* наведение */
+.control-label:not(.control-label-disabled):hover {
+  opacity: 0.6;
+}
+
+/* нажатие */
+.control-label:not(.control-label-disabled):active {
+  opacity: 0.3;
+}
+
+/* описывает состояние выбранного чекбокса */
+.checkbox .control-input:checked::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/interface/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* превращает чекбокс в радиокнопку */
+.radio .control-input {
+  border-radius: 50%;
+}
+
+/* описывает состояние выбранной радиокнопки */
+.radio .control-input:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background-color: #3f5e72;
+  border-radius: 50%;
+}
+
+/* задает размеры блоку с выбором цены */
+.price-area {
+  width: 288px;
+}
+
+.price-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2px;
+  margin-bottom: 36px;
+}
+
+/* соединяет поля ввода цены */
+.position-wrapper {
+  position: relative;
+}
+
+/* описывает стили поля для ввода цены */
+.price-input {
+  display: block;
+  width: 143px;
+  padding-right: 51px;
+  border-radius: 4px 0 0 4px;
+}
+
+/* меняет скругление краев на втором поле */
+.price-input-reverse {
+  border-radius: 0 4px 4px 0;
+}
+
+/* убирает стрелки для мозилы */
+.number-input {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+/* убирает браузерные стрелки управления числом в инпуте (chrome) */
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+/* описывает стили и расположение лейбла "от"/"до" */
+.like-placeholder {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #000000;
+  opacity: 0.3;
+}
+
+/* описывает стили для полосы регулировки цены */
+.range-scale {
+  position: relative;
+  width: 100%;
+  height: 4px;
+  margin-top: 44px;
+  margin-bottom: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* описывает стили для промежутка выбранной цены */
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+/* позиционирует и оформляет кнопки регулировки цены */
+.toggle-range {
+  position: absolute;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-range:disabled {
+  background-color: #a8a8a8;
+  cursor: default;
+}
+
+.toggle-range:not(:disabled):active {
+  outline: 2px solid #83b3d3;
+}
+
+/* позиционирует кнопку минимальной цены */
+.toggle-min {
+  left: 0;
+}
+
+/* позиционирует кнопку максимальной цены */
+.toggle-max {
+  right: 0;
+}
+
+/* выравнивает кнопки, флекс ради центровки и gap'a */
+.catalog-filter-buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(36px, auto);
+  grid-template-rows: minmax(36px, auto);
+  -ms-flex-line-pack: start;
+      align-content: start;
+  gap: 32px;
+  width: 191px;
+  margin-top: 56px;
+}
+
+.catalog-filter-buttons button {
+  max-width: 191px;
+  padding: 8px 15px;
+}
+
+/* ----- cтили для hotels-section ----- */
+/* задает пространство секции отелей */
+.hotels-section {
+  padding: 50px 70px 60px;
+}
+
+/* описывает шапку блока отелей флексбоксом */
+.hotels-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
+  row-gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* задает отступы заголовку секции отелей */
+.hotels-lead {
+  max-width: 410px;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+/* оформляет выпадающий список */
+.control-select {
+  width: 292px;
+  height: 49px;
+  padding: 0 40px 0 18px;
+  padding-right: 40px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #ffffff;
+  background-image: url("../images/interface/arrowdown.svg");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.control-select:disabled {
+  color: #000000;
+  border-color: #000000;
+  opacity: 0.3;
+}
+
+.control-select:not(:disabled):hover {
+  outline-style: auto;
+}
+
+/* описывает грид контейнер для списка кнопок сортировки */
+.sorting-option-list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 48px);
+  gap: 8px;
+  max-width: 224px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* описывает размеры и стили ссылкам сортировки */
+.sorting-option-link {
+  position: relative;
+  display: block;
+  min-width: 48px;
+  min-height: 48px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.sorting-option-link[href]:hover,
+.sorting-option-link[href]:active {
+  border-color: #000000;
+}
+
+/* описывает состояние текущей ссылки сортировки */
+.current-option-link {
+  border-color: #000000;
+}
+
+/* создает и позиционирует псевдоэлемент */
+.sorting-option-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 16px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* добавляет иконку таблиц */
+.display-table::before {
+  background-image: url("../images/interface/table.svg");
+}
+
+/* добавляет иконку карточки */
+.display-cards::before {
+  background-image: url("../images/interface/card.svg");
+}
+
+/* добавляет иконку списка */
+.display-list::before {
+  background-image: url("../images/interface/list.svg");
+}
+
+/* оформляет и описывает список отелей гридом */
+.hotel-list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 342px);
+  gap: 18px;
+  margin: -1px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* оформляет карточку */
+/* карточка сохранит размеры, если контента станет меньше */
+.hotel-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+}
+
+/* отменяет браузерные стили */
+.hotel-link {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+}
+
+.hotel-link:focus-visible,
+.hotel-link:hover {
+  color: #756157;
+}
+
+.hotel-link:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.hotel-link-img:focus-visible::before,
+.hotel-link-img:hover::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 99%;
+  height: 99%;
+  -webkit-box-shadow: 0 0 6px 1px #756157;
+          box-shadow: 0 0 6px 1px #756157;
+}
+
+.hotel-link-img:active::before {
+  -webkit-box-shadow: 0 0 5px 1px rgba(117, 97, 87, 0.6);
+          box-shadow: 0 0 5px 1px rgba(117, 97, 87, 0.6);
+}
+
+/* задает display картинке отеля в карточке */
+.hotel-card-img {
+  display: block;
+  width: 300px;
+  height: 212px;
+}
+
+/* обнуляет браузерные отступы параграфов в картах */
+.hotel-card p {
+  margin: 0;
+}
+
+/* стилизует и выравнивает заголовок карточки отеля */
+.hotel-title {
+  margin-bottom: 0;
+  text-transform: none;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+/* описывает гридом контейнер с кнопками, и качетсвом отелей */
+.hotel-card-options,
+.hotel-card-buttons,
+.hotel-quality {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 140px 20px 140px;
+  grid-template-columns: 140px 140px;
+  gap: 20px;
+}
+
+.accommodation-price {
+  text-align: end;
+}
+
+/* описывает кнопочные стили в карточке отеля флексом для выравнивания */
+.hotel-card .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 140px;
+  min-height: 36px;
+  padding: 8px 10px;
+}
+
+.hotel-quality {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* описывает флекс-контейнер, в котором звёздочки, выравнивает псевдоэлементы */
+.hotel-stars {
+  width: 140px;
+  height: 36px;
+  padding-top: 10px;
+}
+
+/* описывает псевдоэлемент с иконкой звездочки */
+/* в папке лежит спрайт звезд на всякий случай - не забыть удалить или использовать */
+/* bug: при масштабировании контента в браузере, звезды прячутся или добавляются */
+.hotel-stars::before {
+  content: "";
+  display: block;
+  height: 17px;
+  background-image: url("../images/icons/star.svg");
+  background-repeat: space no-repeat;
+  background-size: contain;
+}
+
+/* задает ширину псевдоэлементу для отображения одной звезды */
+.hotel-stars-1::before {
+  width: 24px;
+}
+
+/* задает ширину псевдоэлементу для отображения двух звезд */
+.hotel-stars-2::before {
+  width: 48px;
+}
+
+/* задает ширину псевдоэлементу для отображения трех звезд */
+.hotel-stars-3::before {
+  width: 72px;
+}
+
+/* задает ширину псевдоэлементу для отображения четырех звезд */
+.hotel-stars-4::before {
+  width: 96px;
+}
+
+/* задает ширину псевдоэлементу для отображения пяти звезд */
+.hotel-stars-5::before {
+  width: 120px;
+}
+
+/* описывает стили для параграфа с рейтингом места размещения */
+/* вложенность для специфичности */
+.hotel-quality .hotel-rating {
+  padding-top: 9px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  background-color: #f2f2f2;
+  cursor: default;
+}
+
+/* описывает флексбокс блока пагинации, выравнивает псевдоэлемент */
+.catalog-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* описывает псевдоэлемент - декоративная линия над пагинацией */
+.catalog-pagination::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 39px;
+  background-color: #e6e6e6;
+}
+
+/* описывает флексбоксом список пагинации, выравнивает, сбрасывает стили */
+.pagination-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* описывает ссылку пагинации флексбоксом, задает размеры, сбрасывает лишние стили */
+.pagination-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 10px;
+}
+
+/* описывает стили для текущей ссылки пагинации */
+.current-pagination-link {
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
+/* описывает стили для пустой ссылки пагинации */
+.empty-pagination-link {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* ----- модальное окно ---- */
+.modal-container {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  width: 717px;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.button-modal-close {
+  position: absolute;
+  top: 64px;
+  right: 52px;;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.button-modal-close::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #000000;
+  -webkit-mask-image: url("../images/interface/button-close.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("../images/interface/button-close.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.button-modal-close:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.button-modal-close:focus-visible,
+.button-modal-close:not(:disabled):hover,
+.button-modal-close:not(:disabled):active {
+  background-color: #e6e6e6;
+}
+
+.button-modal-close:not(:disabled):active::before {
+  opacity: 0.3;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  padding-right: 40px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.alert-place-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 440px;
+  grid-template-columns: 440px;
+  -ms-grid-rows: 48px minmax(44px, auto);
+  grid-template-rows: 48px minmax(44px, auto);
+  margin-left: auto;
+}
+
+.alert-place-wrapper > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.alert-place-wrapper > *:nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+
+.search-form-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 135px;
+  min-height: 48px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.search-form-label span {
+  max-width: 135px;
+}
+
+.search-form-date {
+  width: 440px;
+  padding-right: 45px;
+  background-image: url("../images/icons/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 21.5px top 15px;
+}
+
+.alerts {
+  margin-top: 4px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.alerts-value-invalid {
+  color: #ff5757;
+}
+
+.count-field-group {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.short-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-width: 247px;
+  margin-bottom: 48px;
+}
+
+.short-group:nth-of-type(2) .search-form-label {
+  padding-left: 5px;
+  text-align: center;
+}
+
+.count-input {
+  z-index: 1;
+  width: 30px;
+  height: 48px;
+  padding: 12px 0;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 0;
+}
+
+.button-toggle {
+  position: relative;
+  width: 40px;
+  height: 48px;
+  background-color: #f2f2f2;
+  border: 0;
+  cursor: pointer;
+  outline: 0;
+}
+
+.button-toggle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 14px;
+  height: 2px;
+  background-color: rgba(117, 97, 87, 0.3);
+}
+
+.button-plus::before {
+  height: 14px;
+  -webkit-mask-image: url("../images/interface/button-plus.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-image: url("../images/interface/button-plus.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.button-minus {
+  margin-left: auto;
+  border-radius: 4px 0 0 4px;
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+}
+/* ----- состояния для кнопок + - ----- */
+/* неактивность */
+.button-toggle:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* фокус */
+.button-toggle:focus-visible::before {
+  background-color: #000000;
+}
+
+.button-toggle:focus-visible {
+  background-color: #e6e6e6;
+}
+
+/* добавляет обводку при фокусе */
+.button-toggle:focus-visible::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  outline-style: auto;
+}
+
+.button-toggle:not(:disabled):hover::before {
+  background-color: #000000;
+}
+
+.button-toggle:not(:disabled):hover {
+  background-color: #e6e6e6;
+}
+
+/* нажатие на кнопку */
+.button-toggle:not(:disabled):active::before {
+  background-color: #000000;
+  opacity: 0.2;
+}
+
+.button-toggle:not(:disabled):active {
+  background-color: #e6e6e6;
+}
+
+.info-button {
+  position: relative;
+  width: 26px;
+  height: 26px;
+  margin: 11px 10.5px;
+  font-family: inherit;
+  background-color: #83b3d3;
+  background-image: url("../images/interface/info.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 0;
+  border-radius: 50%;
+}
+
+.tooltip {
+  z-index: 2;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  width: 256px;
+  padding: 21px 18px 23px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: start;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3)
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: solid 11px transparent;
+  border-bottom: 10px solid #333333;
+}
+
+.info-button:focus .tooltip,
+.info-button:hover .tooltip {
+  display: block;
+}
+
+.button-modal-submit {
+  width: 100%;
+  padding: 18px 77px;
+  line-height: 24px;
+  border-radius: 10px;
+}
+
+.button-modal-submit:not(:disabled):active {
+  background-color: #68a2ca;
+}
+
+.close-modal {
+  display: none;
+}
