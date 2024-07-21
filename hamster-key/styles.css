@@ -15,16 +15,17 @@ body {
     align-items: center;
     min-width: 320px;
     min-height: 100%;
-    background-color: #333;
+    background-color:#1f1f1f;
     margin: 0;
 }
 
 .grid {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(6, 48px);
     grid-template-rows: repeat(6, 48px);
     gap: 5px;
-    position: relative;
+    background-color: #282828;
 }
 
 @media (min-width: 768px) {
@@ -41,6 +42,8 @@ body {
     position: absolute;
     padding: 0;
     margin: 0;
+    border: 0;
+    border-radius: 2px;
 }
 
 .block:hover {
@@ -52,14 +55,23 @@ body {
     opacity: 0.5;
 }
 
+
 .block.red {
-    background-color: #f44336;
+    background: url("./red.svg");
+    background-color: rgba(252, 20, 18, 0.1);
+    background-size: 100% 100%;
 }
 
 .block.green {
-    background-color: #4caf50;
+    background: url("./green.svg");
+    background-color: rgba(0, 254, 100, 0.1);
+    background-size: 100% 100%;
 }
 
 .block.key {
-    background-color: #ffeb3b;
+    background: url("./key.svg");
+    background-color: #3d3b24;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
