@@ -1,0 +1,50 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(6, 100px);
+    gap: 5px;
+    position: relative;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.block:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.block:active {
+    opacity: 0.5;
+}
+
+.block.red {
+    background-color: #f44336;
+}
+
+.block.green {
+    background-color: #4caf50;
+}
+
+.block.key {
+    background-color: #ffeb3b;
+    background-image: url('key-icon.png'); /* Assuming you have a key icon */
+    background-size: cover;
+}
