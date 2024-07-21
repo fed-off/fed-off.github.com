@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('touchend', stopDrag);
 
     document.addEventListener('mousemove', drag);
-    document.addEventListener('touchmove', drag);
+    document.addEventListener('touchmove', drag, {passive: false});
 
     function canMove(block, newX, newY) {
         const width = parseInt(block.dataset.width);
