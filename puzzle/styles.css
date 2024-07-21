@@ -25,8 +25,8 @@ body {
 
 @media (min-width: 768px) {
     .grid {
-        grid-template-columns: repeat(6, 100px);
-        grid-template-rows: repeat(6, 100px);
+        grid-template-columns: repeat(6, 48px);
+        grid-template-rows: repeat(6, 48px);
     }
 }
 
