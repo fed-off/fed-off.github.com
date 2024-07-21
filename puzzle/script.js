@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (viewPortSize < 768) {
         blockSize = 48;
     } else {
-        blockSize = 48;
+        blockSize = 100;
     }
     function createBlock(block) {
         const element = document.createElement('button');
