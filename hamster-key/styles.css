@@ -29,10 +29,54 @@ body {
     background-color: #282828;
 }
 
+.grid::before {
+    content: "";
+    position: absolute;
+    top: 106px;
+    right: -5px;
+    transform: translateX(100%);
+    width: 24px;
+    height: 48px;
+    background-color: #282828;
+}
+
+.grid::after {
+    content: "";
+    position: absolute;
+    top: 106px;
+    right: -5px;
+    transform: translateX(100%);
+    width: 24px;
+    height: 48px;
+    background-color: #3d3b24;
+    mask-image: url("./arrow.png");
+    mask-repeat: no-repeat;
+    mask-size: 150%;
+    mask-position: center;
+}
+
 @media (min-width: 768px) {
     .grid {
         grid-template-columns: repeat(6, 100px);
         grid-template-rows: repeat(6, 100px);
+    }
+
+    .grid::before {
+        top: 210px;
+        right: -5px;
+        width: 50px;
+        height: 100px;
+    }
+    
+    .grid::after {
+        top: 210px;
+        right: -5px;
+        width: 50px;
+        height: 100px;
+    }
+
+    .timer {
+        font-size: 26px;
     }
 }
 
@@ -98,4 +142,29 @@ body {
 
 .timer__value--stopped {
     font-weight: 700;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(6, 100px);
+        grid-template-rows: repeat(6, 100px);
+    }
+
+    .grid::before {
+        top: 210px;
+        right: -5px;
+        width: 50px;
+        height: 100px;
+    }
+    
+    .grid::after {
+        top: 210px;
+        right: -5px;
+        width: 50px;
+        height: 100px;
+    }
+
+    .timer {
+        font-size: 26px;
+    }
 }
