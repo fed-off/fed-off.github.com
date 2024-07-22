@@ -55,31 +55,6 @@ body {
     mask-position: center;
 }
 
-@media (min-width: 768px) {
-    .grid {
-        grid-template-columns: repeat(6, 100px);
-        grid-template-rows: repeat(6, 100px);
-    }
-
-    .grid::before {
-        top: 210px;
-        right: -5px;
-        width: 50px;
-        height: 100px;
-    }
-    
-    .grid::after {
-        top: 210px;
-        right: -5px;
-        width: 50px;
-        height: 100px;
-    }
-
-    .timer {
-        font-size: 26px;
-    }
-}
-
 .block {
     display: flex;
     justify-content: center;
