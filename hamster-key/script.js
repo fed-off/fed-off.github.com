@@ -43,6 +43,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     blocks.forEach(createBlock);
 
+    // Функция для форматирования чисел в формате двузначного числа
+    function formatTime(number) {
+        return number < 10 ? `0${number}` : number;
+    }
+
+    let totalSeconds = 0;
+    const timerValue = document.querySelector('.timer__value');
+
+    // Обновление таймера каждую секунду
+    const timerInterval = setInterval(() => {
+        totalSeconds++;
+        const minutes = Math.floor(totalSeconds / 60);
+        const seconds = totalSeconds % 60;
+        timerValue.textContent = `${formatTime(minutes)}:${formatTime(seconds)}`;
+    }, 1000);
+
+    // Функция для остановки таймера
+    function stopTimer() {
+        const GREEN = 'rgba(0, 254, 100, 0.2)';
+        const RED = 'rgba(252, 20, 18, 0.2)';
+        const WIN_TIME = 30;
+        const timeResultSeconds = (+timerValue.textContent.slice(-2));
+        const timeResultMinutes = (+timerValue.textContent.slice(0, 2));
+        const timeResult = timeResultMinutes ? WIN_TIME + 1 : timeResultSeconds;
+        timeResult < WIN_TIME ? timerValue.style.backgroundColor = `${GREEN}` : timerValue.style.backgroundColor = `${RED}`;
+
+        clearInterval(timerInterval);
+        timerValue.classList.add('timer__value--stopped');
+    }
+
     let selectedBlock = null;
 
     function startDrag(e) {
@@ -55,8 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
             selectedBlock.startY = parseInt(selectedBlock.dataset.y);
         }
     }
-
+    
     function stopDrag() {
+        if (selectedBlock.dataset.id === 'key' &&
+            selectedBlock.dataset.x === '4') {
+                stopTimer();
+            }
+
         if (selectedBlock) {
             selectedBlock = null;
         }

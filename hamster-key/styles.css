@@ -11,6 +11,7 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-width: 320px;
@@ -74,4 +75,27 @@ body {
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+/* Timer */
+.timer {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: white;
+}
+
+.timer__text {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.timer__value {
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.timer__value--stopped {
+    font-weight: 700;
 }
