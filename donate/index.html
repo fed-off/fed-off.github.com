@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Поддержать автора</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', Arial, Helvetica, sans-serif;
+      background: url('./bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: auto;
+      background-blend-mode: multiply;
+    }
+
+    .container {
+      background: rgba(10, 10, 10, 0.95);
+      border: 2px solid #c89600;
+      border-radius: 8px;
+      padding: 30px;
+      max-width: 450px;
+      box-shadow: 0 0 20px rgba(200, 150, 0, 0.5);
+      margin: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      color: #c89600;
+      font-size: 2.5em;
+      text-transform: uppercase;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .qr-code img {
+      width: 80%;
+      height: 100%;
+      border: 2px solid #c89600;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #f0f0f0;
+      line-height: 1.6;
+      margin: 12px 0;
+    }
+
+    .donate-button {
+      display: inline-block;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #c89600, #8b6500);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: 700;
+      border-radius: 6px;
+      border: 1px solid #1a1a1a;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      margin: 20px 0;
+      text-transform: uppercase;
+    }
+
+    .donate-button:hover {
+      background: linear-gradient(135deg, #d4a017, #a67c00);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(200, 150, 0, 0.7);
+    }
+
+    .thank-you {
+      font-size: 1.1em;
+      color: #ccc;
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+
+      p {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oswald:wght@700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Поддержать автора</h1>
+    <p>Отсканировать QR-code можно прямо из приложения банка</p>
+    <div class="qr-code">
+      <img src="./qr-code.png" alt="QR-код для доната">
+    </div>
+    <a href="https://tbank.ru/cf/6BZmuGZVGsH" class="donate-button">Задонатить</a>
+    <p class="thank-you">Хз почему вы это делаете, но мне приятно.<br>Спасибо! :3</p>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const button = document.querySelector('.donate-button');
+      const qrCode = document.querySelector('.qr-code img');
+      button.style.opacity = '0';
+      qrCode.style.opacity = '0';
+      button.style.transition = 'opacity 0.8s, transform 0.3s';
+      qrCode.style.transition = 'opacity 1.2s';
+      setTimeout(() => {
+        button.style.opacity = '1';
+        qrCode.style.opacity = '1';
+      }, 200);
+    });
+  </script>
+</body>
+
+</html>
