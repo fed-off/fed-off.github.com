@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /yandex_7c56be495e1849d3.html
+Allow: /
+
+Sitemap: https://ademar-asha.ru/sitemap.xml

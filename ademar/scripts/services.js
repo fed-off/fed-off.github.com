@@ -1,0 +1,1 @@
+var r=document.querySelector(".services__list"),o=t=>{let e=t.target;if(e.closest(".services__title-wrapper")){let s=e.closest(".services__item"),c=s.querySelector(".services__button"),i=s.querySelector(".services__description");c.classList.toggle("services__button--active"),i.classList.toggle("services__description--active")}};r.addEventListener("click",o);
