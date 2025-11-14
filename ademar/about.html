@@ -8,16 +8,16 @@
   <meta name="description"
     content="О компании Адэмар - производство металлоизделий с 2009 года. Современное оборудование, опытные специалисты и качественный подход к каждому заказу.">
   <link rel="canonical" href="https://ademar-asha.ru/about.html">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="/fonts/regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="/ademar/favicon.ico">
+  <link rel="icon" href="/ademar/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__container container"><a class="logo" href="/">
+    <div class="header__container container"><a class="logo" href="/ademar">
         <div class="logo__img"><img class="logo__main" src="./images/main-logo.svg" width="60" height="45"
             alt="Логотип компании"></div><svg xmlns="http://www.w3.org/" width="160" height="37" viewBox="0 0 360 84">
           <title class="visually-hidden">Адэмар</title>
@@ -37,27 +37,36 @@
       </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a class="header__nav-link" href="/ademar/">Главная</a></li>
-          <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="./about.html"
+          <li class="header__nav-item"><a class="header__nav-link" href="/ademar">Главная</a></li>
+          <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="about.html"
               aria-current="page">О нас</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="./catalog.html">Каталог</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="./contacts.html">Контакты</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="faq.html">FAQ</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="header__contacts">
-        <li class="header__contact"><a class="header__contacts-link header__contacts-link--phone"
-            href="tel:+79823304737">8 982 330 47 37</a></li>
-        <li class="header__contact"><a class="header__contacts-link header__contacts-link--mail"
-            href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
-      </ul><button class="header__cart-button" type="button" aria-label="Открыть корзину"><svg width="30" height="30"
-          viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M9 2L7.17 4H3C1.9 4 1 4.9 1 6V19C1 20.1 1.9 21 3 21H21C22.1 21 23 20.1 23 19V6C23 4.9 22.1 4 21 4H16.83L15 2H9ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7Z"
-            fill="currentColor" />
-        </svg> <span class="header__cart-count">0</span></button> <button class="header__button" type="button"><span
+      <div class="header__actions"><a class="header__cart-button" href="cart.html"><span class="visually-hidden">Открыть
+            корзину</span> <span class="header__cart-count">0</span> </a><button class="header__contacts-button"
+          type="button">Связаться</button></div><button class="header__button" type="button"><span
           class="visually-hidden">Открыть меню</span> <span class="header__button-line header__button-line--top"></span>
         <span class="header__button-line header__button-line--middle"></span> <span
           class="header__button-line header__button-line--bottom"></span></button>
+    </div><!-- Модальное окно контактов -->
+    <div class="header__contacts-modal">
+      <div class="header__contacts-content"><button class="header__contacts-close" type="button"><span
+            class="visually-hidden">Закрыть</span></button>
+        <h2 class="header__contacts-title">Свяжитесь с нами</h2>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--phone"
+              href="tel:+79823304737">8 982 330 47 37</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--mail"
+              href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--telegram"
+              href="https://t.me/+79823304737" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--whatsapp"
+              href="https://wa.me/79823304737" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
@@ -69,166 +78,206 @@
             накопили огромный опыт в изготовлении металлоизделий различной сложности и стали надежным партнером для
             многих предприятий и частных заказчиков.</p>
           <p class="hero-intro__text">Наша миссия - предоставлять качественные услуги по металлообработке с применением
-            современных технологий и индивидуальным подходом к каждому клиенту.</p>
+            современных технологий и индивидуальным подходом к каждому клиенту.</p><a href="catalog.html"
+            class="hero-intro__cta-button">Наши услуги</a>
         </div>
-        <div class="hero-intro__image-wrapper"><img class="hero-intro__image" src="./images/det1.jpg" width="600"
+        <div class="hero-intro__image-wrapper"><img class="hero-intro__image" src="./images/about-hero.webp" width="600"
             height="450" alt="Производство металлоизделий"></div>
       </div>
     </section>
     <section class="advantages">
       <div class="advantages__container container">
-        <h2 class="advantages__title title">Наши преимущества</h2>
+        <h2 class="advantages__title title">Наши ценности</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--engineer">
-            <p class="advantages__item-title">Высококвалифицированный инженерный состав</p>
-          </li>
-          <li class="advantages__item advantages__item--area">
-            <p class="advantages__item-title">Большой объем собственных производственных площадей</p>
-          </li>
-          <li class="advantages__item advantages__item--planning">
-            <p class="advantages__item-title">Автоматизированное проектирование</p>
-          </li>
-          <li class="advantages__item advantages__item--equipment">
-            <p class="advantages__item-title">Автоматизированное оборудование</p>
+            <p class="advantages__item-title">Профессионализм и экспертиза</p>
           </li>
           <li class="advantages__item advantages__item--price">
-            <p class="advantages__item-title">Соотношение цены и качества продукции</p>
+            <p class="advantages__item-title">Честность и прозрачность</p>
+          </li>
+          <li class="advantages__item advantages__item--equipment">
+            <p class="advantages__item-title">Инновации и развитие</p>
           </li>
           <li class="advantages__item advantages__item--guarantee">
-            <p class="advantages__item-title">Предоставление гарантии на продукцию</p>
+            <p class="advantages__item-title">Качество и надежность</p>
+          </li>
+          <li class="advantages__item advantages__item--planning">
+            <p class="advantages__item-title">Индивидуальный подход</p>
+          </li>
+          <li class="advantages__item advantages__item--area">
+            <p class="advantages__item-title">Эффективность и оперативность</p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="additional-services">
-      <div class="additional-services__container container">
-        <h2 class="additional-services__title title">Наше оборудование и возможности</h2>
-        <p class="additional-services__text text">Мы постоянно развиваемся и инвестируем в современное оборудование. В
-          нашем распоряжении находятся высокоточные станки с ЧПУ, лазерные и плазменные установки для резки металла,
-          современное сварочное оборудование и камеры для порошковой покраски.</p>
-        <p class="additional-services__text text">Наша производственная база позволяет выполнять комплексные заказы от
-          разработки чертежей до финишной обработки изделий. Мы работаем с различными видами металлов и можем
-          реализовать проекты любой сложности.</p>
-        <ul class="additional-services__list">
-          <li class="additional-services__item additional-services__item--hole">Высокоточное сверление</li>
-          <li class="additional-services__item additional-services__item--pipe">Резка труб и профилей</li>
-          <li class="additional-services__item additional-services__item--laser">Лазерная резка металла</li>
-          <li class="additional-services__item additional-services__item--cut">Раскрой листового металла</li>
-          <li class="additional-services__item additional-services__item--wending">Сварочные работы</li>
-          <li class="additional-services__item additional-services__item--painting">Порошковая покраска</li>
+    <section class="equipment">
+      <div class="equipment__container container">
+        <h2 class="equipment__title title">Оборудование и возможности</h2>
+        <div class="equipment__slider-wrapper"><button class="equipment__nav equipment__nav--prev" type="button"
+            aria-label="Предыдущее оборудование"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
+          <div class="equipment__slider">
+            <ul class="equipment__list">
+              <li class="equipment__item">
+                <article class="equipment__card">
+                  <div class="equipment__image-wrapper"><img class="equipment__image" src="./images/tokar-m.webp"
+                      width="320" height="240" alt="Токарный станок с ЧПУ" loading="lazy"></div>
+                  <div class="equipment__content">
+                    <h3 class="equipment__item-title">Токарно-револьверный станок с ЧПУ по металлу ST-30F</h3>
+                    <p class="equipment__text">Высокоточная обработка деталей сложной формы. Максимальный диаметр
+                      обработки - 400 мм, длина - 750 мм.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="equipment__item">
+                <article class="equipment__card">
+                  <div class="equipment__image-wrapper"><img class="equipment__image" src="./images/lazer-m.png"
+                      width="320" height="240" alt="Лазерная установка для резки металла" loading="lazy"></div>
+                  <div class="equipment__content">
+                    <h3 class="equipment__item-title">Лазерный станок JL-K1390 JULONG</h3>
+                    <p class="equipment__text">Высокоточная резка металла толщиной до 20 мм. Рабочая зона 1300x900 мм.
+                      Идеален для сложных контуров.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="equipment__item">
+                <article class="equipment__card">
+                  <div class="equipment__image-wrapper"><img class="equipment__image" src="./images/svarka-m.jpg"
+                      width="320" height="240" alt="Сварочные работы" loading="lazy"></div>
+                  <div class="equipment__content">
+                    <h3 class="equipment__item-title">Станок лазерной сварки STW-150J</h3>
+                    <p class="equipment__text">Прецизионная лазерная сварка металлических изделий. Минимальная
+                      деформация, высокое качество шва.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="equipment__item">
+                <article class="equipment__card">
+                  <div class="equipment__image-wrapper"><img class="equipment__image" src="./images/gibka-m.jpg"
+                      width="320" height="240" alt="Камера порошковой покраски" loading="lazy"></div>
+                  <div class="equipment__content">
+                    <h3 class="equipment__item-title">Гидравлический листогибочный пресс MetalTec HBM 30/1600 (E22)</h3>
+                    <p class="equipment__text">Гибка листового металла толщиной до 3 мм. Длина рабочей зоны - 1600 мм.
+                      Высокая точность и производительность.</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div><button class="equipment__nav equipment__nav--next" type="button"
+            aria-label="Следующее оборудование"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
+        </div>
+        <div class="equipment__dots"></div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="video__container container">
+        <h2 class="video__title title">Наше производство</h2>
+        <div class="video__wrapper"><iframe class="video__iframe" src="https://www.youtube.com/embed/7tsqxDQsQyc"
+            title="Видео о производстве Адэмар" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen loading="lazy"></iframe></div>
+      </div>
+    </section>
+    <section class="certificates">
+      <div class="certificates__container container">
+        <h2 class="certificates__title title">Сертификаты и документы</h2>
+        <ul class="certificates__list">
+          <li class="certificates__item"><img class="certificates__image" src="./images/sert-iso.png" width="300"
+              height="400" alt="Сертификат соответствия ISO 9001" loading="lazy">
+            <p class="certificates__caption">Сертификат ISO 9001</p>
+          </li>
+          <li class="certificates__item"><img class="certificates__image" src="./images/sert-gost.jpg" width="300"
+              height="400" alt="Сертификат ГОСТ на металлообработку" loading="lazy">
+            <p class="certificates__caption">Сертификат ГОСТ</p>
+          </li>
+          <li class="certificates__item"><img class="certificates__image" src="./images/sert-sro.jpg" width="300"
+              height="400" alt="Свидетельство о допуске СРО" loading="lazy">
+            <p class="certificates__caption">Допуск СРО</p>
+          </li>
+          <li class="certificates__item"><img class="certificates__image" src="./images/sert-svarka.jpg" width="300"
+              height="400" alt="Сертификат специалистов по сварке" loading="lazy">
+            <p class="certificates__caption">Аттестация сварщиков</p>
+          </li>
         </ul>
       </div>
     </section>
-    <section class="projects" id="projects">
-      <div class="projects__container container">
-        <h2 class="projects__title title">Наши работы</h2>
-        <ul class="projects__list">
-          <li class="projects__item"><a class="projects__link" href="/catalog.html"><img class="projects__img"
-                src="./images/det2.jpg" width="240" height="240" alt="Пример выполненной работы" loading="lazy"></a>
-          </li>
-          <li class="projects__item"><a class="projects__link" href="/catalog.html"><img class="projects__img"
-                src="./images/det6.jpg" width="240" height="240" alt="Пример выполненной работы" loading="lazy"></a>
-          </li>
-          <li class="projects__item"><a class="projects__link" href="/catalog.html"><img class="projects__img"
-                src="./images/det1.jpg" width="240" height="240" alt="Пример выполненной работы" loading="lazy"></a>
-          </li>
-          <li class="projects__item"><a class="projects__link" href="/catalog.html"><img class="projects__img"
-                src="./images/det3.jpg" width="240" height="240" alt="Пример выполненной работы" loading="lazy"></a>
-          </li>
-          <li class="projects__item"><a class="projects__link" href="/catalog.html"><img class="projects__img"
-                src="./images/det4.jpg" width="240" height="240" alt="Пример выполненной работы" loading="lazy"></a>
-          </li>
-          <li class="projects__item"><a class="projects__link" href="/catalog.html"><img class="projects__img"
-                src="./images/det5.jpg" width="240" height="240" alt="Пример выполненной работы" loading="lazy"></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="reviews">
-      <div class="reviews__container container">
-        <h2 class="reviews__title title">Отзывы наших клиентов</h2>
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <div class="reviews__header">
-              <div class="reviews__avatar">АМ</div>
-              <div class="reviews__author-info">
-                <h3 class="reviews__author">Александр Михайлов</h3>
-                <p class="reviews__company">ИП Михайлов</p>
-              </div>
-            </div>
-            <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span> <span
-                class="reviews__star"></span> <span class="reviews__star"></span> <span class="reviews__star"></span>
-            </div>
-            <p class="reviews__text">Обратился в компанию «Адэмар» для изготовления партии металлических деталей по
-              чертежам. Работой очень доволен! Все выполнено качественно, в срок и по приемлемой цене. Особенно
-              порадовал профессионализм сотрудников и современное оборудование. Детали изготовлены с высокой точностью,
-              никаких нареканий. Буду обращаться еще и рекомендую другим!</p>
-            <p class="reviews__date">15 октября 2024</p>
-          </li>
-          <li class="reviews__item">
-            <div class="reviews__header">
-              <div class="reviews__avatar">ЕК</div>
-              <div class="reviews__author-info">
-                <h3 class="reviews__author">Елена Коваленко</h3>
-                <p class="reviews__company">ООО "СтройМонтаж"</p>
-              </div>
-            </div>
-            <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span> <span
-                class="reviews__star"></span> <span class="reviews__star"></span> <span class="reviews__star"></span>
-            </div>
-            <p class="reviews__text">Сотрудничаем с «Адэмар» уже второй год. Заказываем различные металлоконструкции для
-              наших строительных объектов. Компания зарекомендовала себя как надежный партнер: всегда соблюдают сроки,
-              идут навстречу по оплате, качество работ на высоте. Отдельно хочу отметить лазерную резку - точность
-              просто потрясающая! Приятно работать с профессионалами своего дела.</p>
-            <p class="reviews__date">28 сентября 2024</p>
-          </li>
-          <li class="reviews__item">
-            <div class="reviews__header">
-              <div class="reviews__avatar">ДС</div>
-              <div class="reviews__author-info">
-                <h3 class="reviews__author">Дмитрий Соколов</h3>
-                <p class="reviews__company">Частный заказчик</p>
-              </div>
-            </div>
-            <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span> <span
-                class="reviews__star"></span> <span class="reviews__star"></span> <span class="reviews__star"></span>
-            </div>
-            <p class="reviews__text">Заказывал изготовление металлических элементов для забора на даче. Ребята сделали
-              все отлично! Помогли с разработкой эскиза, предложили оптимальное решение по материалу. Работа выполнена
-              быстро, качественно, с порошковой покраской. Цены адекватные, намного выгоднее, чем в других компаниях.
-              Очень доволен результатом, забор получился красивый и надежный. Спасибо!</p>
-            <p class="reviews__date">5 октября 2024</p>
-          </li>
-        </ul>
+    <section class="cta">
+      <div class="cta__container container">
+        <h2 class="cta__title title">Остались вопросы?</h2>
+        <p class="cta__text">Свяжитесь с нами для получения консультации, расчета стоимости или оформления заказа. Наши
+          специалисты ответят на все ваши вопросы и помогут подобрать оптимальное решение.</p><a class="cta__button"
+          href="cart.html">Отправить заявку</a>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__content">
-        <div class="footer__title-wrapper"><a class="footer__title" href="/">ООО "Адэмар"</a>
-          <p class="footer__subtitle">Металлоизделия на заказ</p>
+        <div class="footer__column">
+          <div class="footer__title-wrapper"><a class="footer__title" href="#">ООО "Адэмар"</a>
+            <p class="footer__subtitle">Металлоизделия на заказ</p>
+          </div>
         </div>
-        <ul class="footer__list footer__list--nav">
-          <li class="footer__item"><a class="footer__text" href="/">Главная</a></li>
-          <li class="footer__item"><a class="footer__text" href="/about.html">О нас</a></li>
-          <li class="footer__item"><a class="footer__text" href="/catalog.html">Каталог</a></li>
-          <li class="footer__item"><a class="footer__text" href="/contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <p class="footer__text">ОГРН: 1237400039073</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">ИНН: 7457014051</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">КПП: 745701001</p>
-          </li>
-        </ul>
-      </div>
+        <nav class="footer__column">
+          <h2 class="footer__heading visually-hidden">Контакты</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__text footer__text--phone" href="tel:+79823304737">8 982 330 47
+                37</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--mail"
+                href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--whatsapp" href="https://wa.me/79823304737"
+                target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--telegram" href="https://t.me/+79823304737"
+                target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column">
+          <h2 class="footer__heading visually-hidden">Навигация</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__text" href="/ademar">Главная</a></li>
+            <li class="footer__item"><a class="footer__text" href="about.html">О нас</a></li>
+            <li class="footer__item"><a class="footer__text" href="catalog.html">Каталог</a></li>
+            <li class="footer__item"><a class="footer__text" href="faq.html">FAQ</a></li>
+            <li class="footer__item"><a class="footer__text" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__column footer__column--legal">
+          <h2 class="footer__heading visually-hidden">Компания</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <p class="footer__text">ОГРН: 1237400039073</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">ИНН: 7457014051</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">КПП: 745701001</p>
+            </li>
+          </ul>
+        </div>
+      </div><a class="footer__privacy-link" href="privacy-policy.html">Политика конфиденциальности</a>
     </div>
   </footer><button class="scroll-up" type="button"><span class="visually-hidden">Наверх</span></button>
+  <div class="gallery-modal">
+    <div class="gallery-modal__content"><button class="gallery-modal__close" type="button"
+        aria-label="Закрыть галерею"></button>
+      <div class="gallery-modal__image-wrapper"><button class="gallery-modal__nav gallery-modal__nav--prev"
+          type="button" aria-label="Предыдущее изображение"></button> <img class="gallery-modal__image" src="" alt="">
+        <button class="gallery-modal__nav gallery-modal__nav--next" type="button"
+          aria-label="Следующее изображение"></button>
+        <div class="gallery-modal__counter"><span class="gallery-modal__current">1</span> / <span
+            class="gallery-modal__total">4</span></div>
+      </div>
+      <p class="gallery-modal__description"></p>
+    </div>
+  </div>
   <script src="scripts/main.js" type="module"></script>
 </body>
 

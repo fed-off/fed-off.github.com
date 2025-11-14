@@ -21,20 +21,20 @@
   <meta property="og:image:alt"
     content="Металлоизделия на заказ, токарные и фрезерные ЧПУ работы, лазерная и плазменная резка металла, сверление отверстий">
   <link rel="canonical" href="https://ademar-asha.ru/"><!-- Favicon Links -->
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/favicons/favicon32.png" type="image/png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/favicons/favicon180.png" type="image/png" sizes="180x180">
-  <link rel="icon" href="/favicons/favicon192.png" type="image/png" sizes="192x192">
-  <link rel="icon" href="/favicons/favicon512.png" type="image/png" sizes="512x512"><!-- Preload -->
-  <link rel="preload" href="/fonts/regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/images/laser.jpg" as="image">
-  <link rel="preload" href="/images/holes.jpg" as="image">
-  <link rel="preload" href="/images/bend.jpg" as="image">
-  <link rel="preload" href="/images/turning.jpg" as="image">
-  <link rel="preload" href="/images/welding.jpg" as="image">
-  <link rel="preload" href="/images/painting.jpg" as="image"><!-- Stylesheet -->
+  <link rel="icon" href="/ademar/favicon.ico">
+  <link rel="icon" href="/ademar/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/ademar/favicons/favicon32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/ademar/favicons/favicon180.png" type="image/png" sizes="180x180">
+  <link rel="icon" href="/ademar/favicons/favicon192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="/ademar/favicons/favicon512.png" type="image/png" sizes="512x512"><!-- Preload -->
+  <link rel="preload" href="fonts/regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="images/laser.jpg" as="image">
+  <link rel="preload" href="images/holes.jpg" as="image">
+  <link rel="preload" href="images/bend.jpg" as="image">
+  <link rel="preload" href="images/turning.jpg" as="image">
+  <link rel="preload" href="images/welding.jpg" as="image">
+  <link rel="preload" href="images/painting.jpg" as="image"><!-- Stylesheet -->
   <link rel="stylesheet" href="styles/styles.css"><!-- Yandex.Metrika counter -->
   <script type="text/javascript">(function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
@@ -109,7 +109,7 @@
 
 <body>
   <header class="header">
-    <div class="header__container container"><a class="logo" href="/" aria-current="page">
+    <div class="header__container container"><a class="logo" href="/ademar" aria-current="page">
         <div class="logo__img"><img class="logo__main" src="./images/main-logo.svg" width="60" height="45"
             alt="Логотип компании"></div><svg xmlns="http://www.w3.org/" width="160" height="37" viewBox="0 0 360 84">
           <title class="visually-hidden">Адэмар</title>
@@ -146,73 +146,50 @@
       </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="/ademar/"
+          <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="/ademar"
               aria-current="page">Главная</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="./about.html">О нас</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="./catalog.html">Каталог</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="./contacts.html">Контакты</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="about.html">О нас</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="faq.html">FAQ</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="header__contacts">
-        <li class="header__contact"><a class="header__contacts-link header__contacts-link--phone"
-            href="tel:+79823304737">8 982 330 47 37</a></li>
-        <li class="header__contact"><a class="header__contacts-link header__contacts-link--mail"
-            href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
-      </ul><button class="header__cart-button" type="button" aria-label="Открыть корзину"><svg width="30" height="30"
-          viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M9 2L7.17 4H3C1.9 4 1 4.9 1 6V19C1 20.1 1.9 21 3 21H21C22.1 21 23 20.1 23 19V6C23 4.9 22.1 4 21 4H16.83L15 2H9ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7Z"
-            fill="currentColor" />
-        </svg> <span class="header__cart-count">0</span></button> <button class="header__button" type="button"><span
+      <div class="header__actions"><a class="header__cart-button" href="cart.html"><span class="visually-hidden">Открыть
+            корзину</span> <span class="header__cart-count">0</span> </a><button class="header__contacts-button"
+          type="button">Связаться</button></div><button class="header__button" type="button"><span
           class="visually-hidden">Открыть меню</span> <span class="header__button-line header__button-line--top"></span>
         <span class="header__button-line header__button-line--middle"></span> <span
           class="header__button-line header__button-line--bottom"></span></button>
+    </div><!-- Модальное окно контактов -->
+    <div class="header__contacts-modal">
+      <div class="header__contacts-content"><button class="header__contacts-close" type="button"><span
+            class="visually-hidden">Закрыть</span></button>
+        <h2 class="header__contacts-title">Свяжитесь с нами</h2>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--phone"
+              href="tel:+79823304737">8 982 330 47 37</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--mail"
+              href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--telegram"
+              href="https://t.me/+79823304737" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--whatsapp"
+              href="https://wa.me/79823304737" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
     <section class="hero-intro">
       <div class="hero-intro__container container">
         <div class="hero-intro__content">
-          <h1 class="hero-intro__title">Профессиональная металлообработка в Аше</h1>
+          <h1 class="hero-intro__title">Профессиональная металлообработка</h1>
           <p class="hero-intro__text">Компания «Адэмар» — ваш надежный партнер в области изготовления металлоизделий
-            любой сложности. Современное оборудование, квалифицированные специалисты и многолетний опыт позволяют нам
-            воплощать в жизнь проекты любой сложности от простых деталей до комплексных металлоконструкций.</p>
-          <p class="hero-intro__text">Мы гарантируем высокое качество, соблюдение сроков и индивидуальный подход к
-            каждому заказу. Работаем как с крупными промышленными предприятиями, так и с частными заказчиками.</p><a
-            href="#services" class="hero-intro__cta-button">Наши услуги</a>
+            любой сложности. Мы гарантируем высокое качество, соблюдение сроков и индивидуальный подход к каждому
+            заказу. Работаем как с крупными промышленными предприятиями, так и с частными заказчиками.</p><a
+            href="catalog.html" class="hero-intro__cta-button">Наши услуги</a>
         </div>
-        <div class="hero-intro__image-wrapper"><img class="hero-intro__image" src="./images/det3.jpg" width="600"
+        <div class="hero-intro__image-wrapper"><img class="hero-intro__image" src="./images/hero-intro.jpg" width="600"
             height="450" alt="Высокоточная обработка металлических деталей на современном оборудовании"></div>
-      </div>
-    </section>
-    <section class="hero">
-      <div class="hero__container container">
-        <h1 class="hero__title title">Металлоизделия на заказ</h1>
-        <p class="hero__text text">Адэмар предоставляет широкий выбор услуг по изготовлению качественных металлоизделий
-          на заказ по выгодным ценам. Современное производство нередко испытывает потребность в изготовлении
-          нестандартных металлических изделий. Наша компания производит металлоизделия на заказ по выгодным ценам. Мы
-          заинтересованы во взаимовыгодном сотрудничестве как с промышленными предприятиями, так и со строительными
-          организациями.</p>
-        <ul class="hero__list">
-          <li class="hero__item hero__item--turning" data-link="turning">
-            <p class="hero__item-title">Токарные и фрезерные ЧПУ работы</p>
-          </li>
-          <li class="hero__item hero__item--laser" data-link="laser">
-            <p class="hero__item-title">Лазерная и плазменная резка металла</p>
-          </li>
-          <li class="hero__item hero__item--holes" data-link="holes">
-            <p class="hero__item-title">Сверление отверстий</p>
-          </li>
-          <li class="hero__item hero__item--bend" data-link="bendling">
-            <p class="hero__item-title">Гибка листа</p>
-          </li>
-          <li class="hero__item hero__item--welding" data-link="welding">
-            <p class="hero__item-title">Сварочные работы</p>
-          </li>
-          <li class="hero__item hero__item--painting" data-link="painting">
-            <p class="hero__item-title">Порошковая окраска</p>
-          </li>
-        </ul>
       </div>
     </section>
     <section class="advantages">
@@ -220,63 +197,363 @@
         <h2 class="advantages__title title">Наши преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--engineer">
-            <p class="advantages__item-title">Высококвалифицированный инженерный состав</p>
+            <p class="advantages__item-title">Высококвалифицированный<br>инженерный состав</p>
           </li>
           <li class="advantages__item advantages__item--area">
             <p class="advantages__item-title">Большой объем собственных производственных площадей</p>
           </li>
           <li class="advantages__item advantages__item--planning">
-            <p class="advantages__item-title">Автоматизированное проектирование</p>
+            <p class="advantages__item-title">Автоматизированное<br>проектирование</p>
           </li>
           <li class="advantages__item advantages__item--equipment">
-            <p class="advantages__item-title">Автоматизированное оборудование</p>
+            <p class="advantages__item-title">Автоматизированное<br>оборудование</p>
           </li>
           <li class="advantages__item advantages__item--price">
-            <p class="advantages__item-title">Соотношение цены и качества продукции</p>
+            <p class="advantages__item-title">Соотношение цены<br>и качества продукции</p>
           </li>
           <li class="advantages__item advantages__item--guarantee">
-            <p class="advantages__item-title">Предоставление гарантии на продукцию</p>
+            <p class="advantages__item-title">Предоставление гарантии<br>на продукцию</p>
           </li>
+        </ul>
+      </div>
+    </section>
+    <section class="hero">
+      <div class="hero__container container">
+        <h2 class="hero__title title">Популярные услуги</h2>
+        <ul class="hero__list">
+          <li class="hero__item hero__item--turning"><a class="hero__item-link" href="catalog.html">
+              <p class="hero__item-title">Токарные и фрезерные ЧПУ работы</p>
+            </a></li>
+          <li class="hero__item hero__item--laser"><a class="hero__item-link" href="catalog.html">
+              <p class="hero__item-title">Лазерная и плазменная резка металла</p>
+            </a></li>
+          <li class="hero__item hero__item--holes"><a class="hero__item-link" href="catalog.html">
+              <p class="hero__item-title">Сверление отверстий</p>
+            </a></li>
+          <li class="hero__item hero__item--bend"><a class="hero__item-link" href="catalog.html">
+              <p class="hero__item-title">Гибка листа</p>
+            </a></li>
+          <li class="hero__item hero__item--welding"><a class="hero__item-link" href="catalog.html">
+              <p class="hero__item-title">Сварочные работы</p>
+            </a></li>
+          <li class="hero__item hero__item--painting"><a class="hero__item-link" href="catalog.html">
+              <p class="hero__item-title">Порошковая окраска</p>
+            </a></li>
         </ul>
       </div>
     </section>
     <section class="additional-services">
       <div class="additional-services__container container">
         <h2 class="additional-services__title title">Изготовление металлоизделий<br>по чертежам заказчика</h2>
-        <p class="additional-services__text text">Производство металлоизделий осуществляется по эскизам или чертежам
-          клиента, при необходимости выполняется разработка необходимой конструкторской документации. Нестандартная
-          продукция изготавливается на современных моделях специализированного оборудования в строгом соответствии с
-          требованиями действующих стандартов. Мощная производственная база расширяет возможности и позволяет выполнять
-          следующие технологические операции:</p>
-        <ul class="additional-services__list">
-          <li class="additional-services__item additional-services__item--hole">Сверление</li>
-          <li class="additional-services__item additional-services__item--pipe">Резка труб, профилей и тд.</li>
-          <li class="additional-services__item additional-services__item--laser">Лазерная резка</li>
-          <li class="additional-services__item additional-services__item--cut">Раскрой металлического листа</li>
-          <li class="additional-services__item additional-services__item--wending">Сварочные работы</li>
-          <li class="additional-services__item additional-services__item--painting">Окрашивание</li>
-        </ul>
+        <div class="additional-services__content">
+          <div class="additional-services__text-wrapper">
+            <p class="additional-services__text text">Производство металлоизделий осуществляется по эскизам или чертежам
+              клиента, при необходимости выполняется разработка необходимой конструкторской документации. Нестандартная
+              продукция изготавливается на современных моделях специализированного оборудования в строгом соответствии с
+              требованиями действующих стандартов. Мощная производственная база позволяет выполнять различные
+              технологические операции, среди которых:</p><a href="catalog/design.html"
+              class="additional-services__button">Узнать подробнее</a>
+          </div>
+          <ul class="additional-services__list">
+            <li class="additional-services__item additional-services__item--hole">Высокоточное сверление</li>
+            <li class="additional-services__item additional-services__item--pipe">Резка труб и профилей</li>
+            <li class="additional-services__item additional-services__item--laser">Лазерная резка</li>
+            <li class="additional-services__item additional-services__item--cut">Раскрой металлического листа</li>
+            <li class="additional-services__item additional-services__item--wending">Сварочные работы</li>
+            <li class="additional-services__item additional-services__item--painting">Окрашивание</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <div class="projects__container container">
+        <h2 class="projects__title title">Наши работы</h2>
+        <div class="projects__slider-wrapper"><button class="projects__nav projects__nav--prev" type="button"
+            aria-label="Предыдущие работы"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
+          <div class="projects__slider">
+            <ul class="projects__list">
+              <li class="projects__item">
+                <article class="projects__card">
+                  <div class="projects__image-wrapper"><img class="projects__image" src="./images/det2.jpg" width="320"
+                      height="240" alt="Металлическая деталь, изготовленная на токарном станке" loading="lazy"></div>
+                  <div class="projects__content">
+                    <p class="projects__description">Высокоточная металлическая деталь, изготовленная на токарном станке
+                      с ЧПУ. Материал: сталь 45. Применение: промышленное оборудование.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="projects__card">
+                  <div class="projects__image-wrapper"><img class="projects__image" src="./images/det1.jpg" width="320"
+                      height="240" alt="Прецизионная деталь сложной формы" loading="lazy"></div>
+                  <div class="projects__content">
+                    <p class="projects__description">Прецизионная деталь сложной формы. Токарно-фрезерная обработка на
+                      станке с ЧПУ. Материал: латунь. Применяется в машиностроении.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="projects__card">
+                  <div class="projects__image-wrapper"><img class="projects__image" src="./images/det3.jpg" width="320"
+                      height="240" alt="Металлическая деталь с резьбовыми соединениями" loading="lazy"></div>
+                  <div class="projects__content">
+                    <p class="projects__description">Металлическая деталь с резьбовыми соединениями. Токарная обработка
+                      с последующей финишной доводкой. Материал: сталь 40Х.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="projects__card">
+                  <div class="projects__image-wrapper"><img class="projects__image" src="./images/det4.jpg" width="320"
+                      height="240" alt="Набор втулок и переходников" loading="lazy"></div>
+                  <div class="projects__content">
+                    <p class="projects__description">Набор втулок и переходников различного диаметра. Материал:
+                      алюминиевый сплав. Высокая точность размеров, класс шероховатости Ra 1.6.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="projects__card">
+                  <div class="projects__image-wrapper"><img class="projects__image" src="./images/det5.jpg" width="320"
+                      height="240" alt="Специализированная деталь по индивидуальному чертежу" loading="lazy"></div>
+                  <div class="projects__content">
+                    <p class="projects__description">Специализированная деталь по индивидуальному чертежу заказчика.
+                      Комплексная обработка: токарные работы, фрезерование, сверление отверстий.</p>
+                  </div>
+                </article>
+              </li>
+              <li class="projects__item">
+                <article class="projects__card">
+                  <div class="projects__image-wrapper"><img class="projects__image" src="./images/det6.jpg" width="320"
+                      height="240" alt="Детали, выполненные лазерной резкой" loading="lazy"></div>
+                  <div class="projects__content">
+                    <p class="projects__description">Комплект деталей, выполненных методом лазерной резки. Материал:
+                      нержавеющая сталь. Толщина: 3 мм. Точность резки: ±0.1 мм.</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </div><button class="projects__nav projects__nav--next" type="button" aria-label="Следующие работы"><svg
+              width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
+        </div>
+        <div class="projects__dots"></div>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="reviews__container container">
+        <h2 class="reviews__title title">Отзывы наших клиентов</h2>
+        <div class="reviews__slider-wrapper"><button class="reviews__nav reviews__nav--prev" type="button"
+            aria-label="Предыдущие отзывы"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
+          <div class="reviews__slider">
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">АМ</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Александр Михайлов</h3>
+                    <p class="reviews__company">ИП Михайлов</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Обратился в компанию «Адэмар» для изготовления партии металлических деталей по
+                  чертежам. Работой очень доволен! Все выполнено качественно, в срок и по приемлемой цене. Особенно
+                  порадовал профессионализм сотрудников и современное оборудование. Детали изготовлены с высокой
+                  точностью, никаких нареканий. Буду обращаться еще и рекомендую другим!</p>
+                <p class="reviews__date">15 октября 2024</p>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">ЕК</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Елена Коваленко</h3>
+                    <p class="reviews__company">ООО "СтройМонтаж"</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Сотрудничаем с «Адэмар» уже второй год. Заказываем различные металлоконструкции
+                  для наших строительных объектов. Компания зарекомендовала себя как надежный партнер: всегда соблюдают
+                  сроки, идут навстречу по оплате, качество работ на высоте. Отдельно хочу отметить лазерную резку -
+                  точность просто потрясающая! Приятно работать с профессионалами своего дела.</p>
+                <p class="reviews__date">28 сентября 2024</p>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">ДС</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Дмитрий Соколов</h3>
+                    <p class="reviews__company">Частный заказчик</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Заказывал изготовление металлических элементов для забора на даче. Ребята
+                  сделали все отлично! Помогли с разработкой эскиза, предложили оптимальное решение по материалу. Работа
+                  выполнена быстро, качественно, с порошковой покраской. Цены адекватные, намного выгоднее, чем в других
+                  компаниях. Очень доволен результатом, забор получился красивый и надежный. Спасибо!</p>
+                <p class="reviews__date">5 октября 2024</p>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">ИП</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Игорь Петров</h3>
+                    <p class="reviews__company">ООО "МеталлСервис"</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Работаем с «Адэмар» на постоянной основе. Заказываем токарные работы для наших
+                  станков. Все детали выполнены с высокой точностью, соответствуют всем требованиям ГОСТа. Радует
+                  оперативность - срочные заказы делают в кратчайшие сроки без потери качества. Цены конкурентные,
+                  менеджеры всегда на связи. Рекомендую как надежного поставщика!</p>
+                <p class="reviews__date">12 октября 2024</p>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">ОН</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Ольга Новикова</h3>
+                    <p class="reviews__company">Дизайн-студия "Лофт"</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Заказывали металлические элементы декора для нашего лофт-проекта. Результат
+                  превзошел все ожидания! Лазерная резка выполнена идеально, все узоры получились четкими и красивыми.
+                  Порошковая покраска отличного качества, цвет именно такой, как мы хотели. Спасибо команде за
+                  креативный подход и внимательность к деталям!</p>
+                <p class="reviews__date">22 сентября 2024</p>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">СВ</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Сергей Васильев</h3>
+                    <p class="reviews__company">ИП Васильев</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Обратился для ремонта промышленного оборудования, нужно было выточить несколько
+                  сложных деталей. В других компаниях отказывались браться за такую работу. Ребята из «Адэмар» взялись и
+                  сделали все на отлично! Детали встали как родные, оборудование заработало. Большое спасибо за
+                  профессионализм и ответственный подход!</p>
+                <p class="reviews__date">18 октября 2024</p>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">МК</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Максим Кузнецов</h3>
+                    <p class="reviews__company">ООО "ПромТехника"</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Отличная компания! Заказывали плазменную резку металла большими партиями. Все
+                  сделано точно в срок, качество резки отменное - края ровные, без заусенцев. Помогли оптимизировать
+                  расход материала, что позволило существенно сэкономить. Доставка организована четко. Будем продолжать
+                  сотрудничество!</p>
+                <p class="reviews__date">1 октября 2024</p>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">АГ</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Анна Григорьева</h3>
+                    <p class="reviews__company">Частный заказчик</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Заказывала металлическую лестницу для дома. Сначала сомневалась, но менеджер
+                  все подробно объяснил, помог с выбором дизайна и материала. Изготовили быстро, качество сварки
+                  превосходное. Лестница получилась прочная и красивая. Монтаж тоже провели аккуратно. Очень довольна,
+                  спасибо!</p>
+                <p class="reviews__date">8 октября 2024</p>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__header">
+                  <div class="reviews__avatar">ВР</div>
+                  <div class="reviews__author-info">
+                    <h3 class="reviews__author">Виктор Романов</h3>
+                    <p class="reviews__company">ООО "АвтоСервис+"</p>
+                  </div>
+                </div>
+                <div class="reviews__rating"><span class="reviews__star"></span> <span class="reviews__star"></span>
+                  <span class="reviews__star"></span> <span class="reviews__star"></span> <span
+                    class="reviews__star"></span>
+                </div>
+                <p class="reviews__text">Постоянно заказываем у «Адэмар» различные запчасти и детали для нашего
+                  автосервиса. Качество всегда на высоте, сроки соблюдают неукоснительно. Особенно нравится, что могут
+                  сделать деталь по образцу, когда оригинал найти невозможно. Цены адекватные, персонал вежливый и
+                  компетентный. Отличная компания!</p>
+                <p class="reviews__date">25 сентября 2024</p>
+              </li>
+            </ul>
+          </div><button class="reviews__nav reviews__nav--next" type="button" aria-label="Следующие отзывы"><svg
+              width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg></button>
+        </div>
+        <div class="reviews__dots"></div>
       </div>
     </section>
     <section class="order" id="order">
       <div class="order__container container">
         <h2 class="order__title title">Оформление заказа</h2>
-        <p class="order__text">На стоимость металлоизделий влияет целый ряд факторов. Наша компания учитывает интересы
-          клиентов и предлагает предприятиям и организациям выгодные условия сотрудничества. Кроме этого, возможно
-          сотрудничество с ИП и физическими лицами. Конечная стоимость выпускаемых нестандартных металлоизделий зависит
-          от: срочности заказа, сложности детали, объема выпускаемой партии, цены используемых материалов.
-          Ориентировочную цену нестандартного изделия можно узнать, связавшись с нами. Окончательная стоимость
-          определяется только после выполнения расчетов техническими специалистами.</p>
-        <p class="order__algorithm-title">Процесс оформления заказа включает в себя<br>следующие этапы:</p>
+        <div class="order__content">
+          <div class="order__text-wrapper">
+            <p class="order__text">На стоимость металлоизделий влияет целый ряд факторов. Наша компания учитывает
+              интересы клиентов и предлагает предприятиям и организациям выгодные условия сотрудничества. Кроме этого,
+              возможно сотрудничество с ИП и физическими лицами. Конечная стоимость выпускаемых нестандартных
+              металлоизделий зависит от: срочности заказа, сложности детали, объема выпускаемой партии, цены
+              используемых материалов. Ориентировочную цену нестандартного изделия можно узнать, связавшись с нами.
+              Окончательная стоимость определяется только после выполнения расчетов техническими специалистами.</p>
+          </div>
+          <div class="order__image-wrapper"><img class="order__image" src="images/order.png" alt="Оформление заказа"
+              width="400" height="400"></div>
+        </div>
+        <p class="order__algorithm-title visually-hidden">Этапы работ:</p>
         <ol class="order__algorithm">
           <li class="order__algorithm-item">
-            <p class="order__algorithm-text">Вы оставляете заявку на почту или по телефону</p>
+            <p class="order__algorithm-text">Вы оставляете заявку на сайте или по телефону</p>
           </li>
           <li class="order__algorithm-item">
             <p class="order__algorithm-text">Мы связываемся с вами для уточнения деталей заказа</p>
           </li>
           <li class="order__algorithm-item">
-            <p class="order__algorithm-text">Мы заключаем договор, выставляем счет на оплату</p>
+            <p class="order__algorithm-text">Заключаем договор, выставляем счет на оплату</p>
           </li>
           <li class="order__algorithm-item">
             <p class="order__algorithm-text">Оформляем доставку или самовывоз готовой продукции</p>
@@ -287,55 +564,65 @@
     <section class="contact-form">
       <div class="contact-form__container container">
         <h2 class="contact-form__title title">Отправить заявку</h2>
-        <p class="contact-form__description">Заполните форму ниже, и наши специалисты свяжутся с вами в ближайшее время
-          для обсуждения деталей заказа. Вы можете прикрепить чертежи, эскизы или фотографии для более точной оценки.
-        </p>
         <form class="contact-form__form" id="contactForm">
-          <div class="contact-form__field"><label class="contact-form__label" for="contactName">Ваше имя <span
-                style="color: #dc3545;">*</span></label> <input class="contact-form__input" type="text" id="contactName"
-              name="name" placeholder="Иван Иванов" required></div>
-          <div class="contact-form__field"><label class="contact-form__label" for="contactPhone">Телефон <span
-                style="color: #dc3545;">*</span></label> <input class="contact-form__input" type="tel" id="contactPhone"
-              name="phone" placeholder="+7 (___) ___-__-__" required></div>
-          <div class="contact-form__field"><label class="contact-form__label" for="contactEmail">Email</label> <input
-              class="contact-form__input" type="email" id="contactEmail" name="email" placeholder="example@mail.ru">
+          <div class="contact-form__fields">
+            <div class="contact-form__fields-row">
+              <div class="contact-form__field"><label class="contact-form__label" for="contactName">Ваше имя <span
+                    style="color: #dc3545;">*</span></label> <input class="contact-form__input" type="text"
+                  id="contactName" name="name" placeholder="Иван Иванов" required></div>
+              <div class="contact-form__field"><label class="contact-form__label" for="contactPhone">Телефон <span
+                    style="color: #dc3545;">*</span></label> <input class="contact-form__input" type="tel"
+                  id="contactPhone" name="phone" placeholder="+7 (___) ___-__-__" required></div>
+            </div>
+            <div class="contact-form__field"><label class="contact-form__label" for="contactEmail">Email</label> <input
+                class="contact-form__input" type="email" id="contactEmail" name="email" placeholder="example@mail.ru">
+            </div>
+            <div class="contact-form__field"><label class="contact-form__label" for="contactMessage">Описание заказа
+                <span style="color: #dc3545;">*</span></label> <textarea class="contact-form__textarea"
+                id="contactMessage" name="message"
+                placeholder="Опишите, что вам необходимо изготовить, укажите примерные размеры, материал и другие важные детали..."
+                required></textarea></div>
           </div>
-          <div class="contact-form__field"><label class="contact-form__label" for="contactMessage">Описание заказа <span
-                style="color: #dc3545;">*</span></label> <textarea class="contact-form__textarea" id="contactMessage"
-              name="message"
-              placeholder="Опишите, что вам необходимо изготовить, укажите примерные размеры, материал и другие важные детали..."
-              required></textarea></div>
-          <div class="contact-form__field"><label class="contact-form__label" for="contactFile">Прикрепить файлы
-              (чертежи, эскизы, фото)</label>
-            <div class="contact-form__file-wrapper"><input class="contact-form__file-input" type="file" id="contactFile"
-                name="file" accept=".pdf,.jpg,.jpeg,.png,.dwg,.doc,.docx" multiple="multiple"> <label
-                class="contact-form__file-label" for="contactFile">Выбрать файлы</label> <span
-                class="contact-form__file-name" id="fileName">Файл не выбран</span></div>
-          </div>
-          <div class="contact-form__submit-wrapper"><button class="contact-form__submit" type="submit">Отправить
-              заявку</button>
+          <div class="contact-form__content">
+            <p class="contact-form__description">Заполните форму, и наши специалисты свяжутся с вами в ближайшее время
+              для обсуждения деталей заказа. Вы можете прикрепить чертежи, эскизы или фотографии для более точной
+              оценки.</p>
             <p class="contact-form__note">* Обязательные поля для заполнения</p>
+            <div class="contact-form__actions">
+              <div class="contact-form__field"><label class="contact-form__label" for="contactFile">Прикрепить файлы
+                  (чертежи, эскизы, фото)</label>
+                <div class="contact-form__file-wrapper"><input class="contact-form__file-input" type="file"
+                    id="contactFile" name="file" accept=".pdf,.jpg,.jpeg,.png,.dwg,.doc,.docx" multiple="multiple">
+                  <label class="contact-form__file-label" for="contactFile">Выбрать файлы</label> <span
+                    class="contact-form__file-name" id="fileName">Файл не выбран</span>
+                </div>
+              </div><button class="contact-form__submit" type="submit">Отправить заявку</button>
+            </div>
+            <div class="contact-form__success" id="formSuccess">Спасибо! Ваша заявка успешно отправлена. Мы свяжемся с
+              вами в ближайшее время.</div>
           </div>
-          <div class="contact-form__success" id="formSuccess">Спасибо! Ваша заявка успешно отправлена. Мы свяжемся с
-            вами в ближайшее время.</div>
         </form>
       </div>
     </section>
     <article class="contacts" id="contacts">
       <div class="contacts__container container">
-        <h2 class="contacts__title title">Контакты</h2>
+        <h1 class="contacts__title title">Контакты</h1>
         <div class="contacts__content">
           <address class="contacts__wrapper">
             <div class="contacts__inner">
-              <p class="contacts__text contacts__text--address">Челябинская область,<br>г. Аша, ул. Узкоколейная, 1А</p>
-              <p class="contacts__text contacts__text--time"><span>Пн-Пт: <time datetime="08:00">08:00</time> - <time
-                    datetime="17:00">17:00</time></span> <span>Сб-Вс: Выходной</span></p>
-            </div>
-            <div class="contacts__inner">
+              <p class="contacts__text contacts__text--whatsapp"><a class="contacts__link"
+                  href="https://wa.me/79823304737" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
               <p class="contacts__text contacts__text--phone"><a class="contacts__link" href="tel:+79823304737">8 982
                   330 47 37</a></p>
+              <p class="contacts__text contacts__text--address">Челябинская область,<br>г. Аша, ул. Узкоколейная, 1А</p>
+            </div>
+            <div class="contacts__inner">
+              <p class="contacts__text contacts__text--telegram"><a class="contacts__link"
+                  href="https://t.me/+79823304737" target="_blank" rel="noopener noreferrer">Telegram</a></p>
               <p class="contacts__text contacts__text--mail"><a class="contacts__link"
                   href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></p>
+              <p class="contacts__text contacts__text--time"><span>Пн-Пт: 08:00 - 17:00</span> <span>Сб-Вс:
+                  Выходной</span></p>
             </div>
           </address>
           <div class="contacts__map"><iframe
@@ -352,29 +639,64 @@
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__content">
-        <div class="footer__title-wrapper"><a class="footer__title" href="#">ООО "Адэмар"</a>
-          <p class="footer__subtitle">Металлоизделия на заказ</p>
+        <div class="footer__column">
+          <div class="footer__title-wrapper"><a class="footer__title" href="#">ООО "Адэмар"</a>
+            <p class="footer__subtitle">Металлоизделия на заказ</p>
+          </div>
         </div>
-        <ul class="footer__list footer__list--nav">
-          <li class="footer__item"><a class="footer__text" href="/">Главная</a></li>
-          <li class="footer__item"><a class="footer__text" href="/about.html">О нас</a></li>
-          <li class="footer__item"><a class="footer__text" href="/catalog.html">Каталог</a></li>
-          <li class="footer__item"><a class="footer__text" href="/contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <p class="footer__text">ОГРН: 1237400039073</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">ИНН: 7457014051</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">КПП: 745701001</p>
-          </li>
-        </ul>
-      </div>
+        <nav class="footer__column">
+          <h2 class="footer__heading visually-hidden">Контакты</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__text footer__text--phone" href="tel:+79823304737">8 982 330 47
+                37</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--mail"
+                href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--whatsapp" href="https://wa.me/79823304737"
+                target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--telegram" href="https://t.me/+79823304737"
+                target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column">
+          <h2 class="footer__heading visually-hidden">Навигация</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__text" href="/ademar">Главная</a></li>
+            <li class="footer__item"><a class="footer__text" href="about.html">О нас</a></li>
+            <li class="footer__item"><a class="footer__text" href="catalog.html">Каталог</a></li>
+            <li class="footer__item"><a class="footer__text" href="faq.html">FAQ</a></li>
+            <li class="footer__item"><a class="footer__text" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__column footer__column--legal">
+          <h2 class="footer__heading visually-hidden">Компания</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <p class="footer__text">ОГРН: 1237400039073</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">ИНН: 7457014051</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">КПП: 745701001</p>
+            </li>
+          </ul>
+        </div>
+      </div><a class="footer__privacy-link" href="privacy-policy.html">Политика конфиденциальности</a>
     </div>
   </footer><button class="scroll-up" type="button"><span class="visually-hidden">Наверх</span></button>
+  <div class="gallery-modal">
+    <div class="gallery-modal__content"><button class="gallery-modal__close" type="button"
+        aria-label="Закрыть галерею"></button>
+      <div class="gallery-modal__image-wrapper"><button class="gallery-modal__nav gallery-modal__nav--prev"
+          type="button" aria-label="Предыдущее изображение"></button> <img class="gallery-modal__image" src="" alt="">
+        <button class="gallery-modal__nav gallery-modal__nav--next" type="button"
+          aria-label="Следующее изображение"></button>
+        <div class="gallery-modal__counter"><span class="gallery-modal__current">1</span> / <span
+            class="gallery-modal__total">6</span></div>
+      </div>
+      <p class="gallery-modal__description"></p>
+    </div>
+  </div>
   <script src="scripts/main.js" type="module"></script>
 </body>
 

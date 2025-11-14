@@ -8,16 +8,16 @@
   <meta name="description"
     content="Полный каталог услуг по металлообработке: токарные и фрезерные работы, лазерная резка, сварка, порошковая покраска. Профессиональное изготовление металлоизделий на заказ.">
   <link rel="canonical" href="https://ademar-asha.ru/catalog.html">
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="/fonts/regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="/fonts/bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="/ademar/favicon.ico">
+  <link rel="icon" href="/ademar/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__container container"><a class="logo" href="/">
+    <div class="header__container container"><a class="logo" href="/ademar">
         <div class="logo__img"><img class="logo__main" src="./images/main-logo.svg" width="60" height="45"
             alt="Логотип компании"></div><svg xmlns="http://www.w3.org/" width="160" height="37" viewBox="0 0 360 84">
           <title class="visually-hidden">Адэмар</title>
@@ -54,33 +54,55 @@
       </a>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item"><a class="header__nav-link" href="/ademar/">Главная</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="./about.html">О нас</a></li>
-          <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="./catalog.html"
+          <li class="header__nav-item"><a class="header__nav-link" href="/ademar">Главная</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="about.html">О нас</a></li>
+          <li class="header__nav-item"><a class="header__nav-link header__nav-link--active" href="catalog.html"
               aria-current="page">Каталог</a></li>
-          <li class="header__nav-item"><a class="header__nav-link" href="./contacts.html">Контакты</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="faq.html">FAQ</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="header__contacts">
-        <li class="header__contact"><a class="header__contacts-link header__contacts-link--phone"
-            href="tel:+79823304737">8 982 330 47 37</a></li>
-        <li class="header__contact"><a class="header__contacts-link header__contacts-link--mail"
-            href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
-      </ul><button class="header__cart-button" type="button" aria-label="Открыть корзину"><svg width="30" height="30"
-          viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M9 2L7.17 4H3C1.9 4 1 4.9 1 6V19C1 20.1 1.9 21 3 21H21C22.1 21 23 20.1 23 19V6C23 4.9 22.1 4 21 4H16.83L15 2H9ZM12 7C14.76 7 17 9.24 17 12C17 14.76 14.76 17 12 17C9.24 17 7 14.76 7 12C7 9.24 9.24 7 12 7Z"
-            fill="currentColor" />
-        </svg> <span class="header__cart-count">0</span></button> <button class="header__button" type="button"><span
+      <div class="header__actions"><a class="header__cart-button" href="cart.html"><span class="visually-hidden">Открыть
+            корзину</span> <span class="header__cart-count">0</span> </a><button class="header__contacts-button"
+          type="button">Связаться</button></div><button class="header__button" type="button"><span
           class="visually-hidden">Открыть меню</span> <span class="header__button-line header__button-line--top"></span>
         <span class="header__button-line header__button-line--middle"></span> <span
           class="header__button-line header__button-line--bottom"></span></button>
+    </div><!-- Модальное окно контактов -->
+    <div class="header__contacts-modal">
+      <div class="header__contacts-content"><button class="header__contacts-close" type="button"><span
+            class="visually-hidden">Закрыть</span></button>
+        <h2 class="header__contacts-title">Свяжитесь с нами</h2>
+        <ul class="header__contacts-list">
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--phone"
+              href="tel:+79823304737">8 982 330 47 37</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--mail"
+              href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--telegram"
+              href="https://t.me/+79823304737" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          <li class="header__contacts-item"><a class="header__contacts-link header__contacts-link--whatsapp"
+              href="https://wa.me/79823304737" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+        </ul>
+      </div>
     </div>
   </header>
   <main>
+    <section class="hero-intro">
+      <div class="hero-intro__container container">
+        <div class="hero-intro__content">
+          <h1 class="hero-intro__title">Каталог<br>товаров и услуг</h1>
+          <p class="hero-intro__text">Здесь вы найдете полный перечень наших услуг по металлообработке и каталог готовых
+            металлических изделий. Вы можете выбрать интересующую вас услугу или товар, ознакомиться с описанием и
+            добавить в корзину для оформления заявки.</p><a href="/price.pdf" class="hero-intro__cta-button"
+            download="прейскурант.pdf">Скачать прейскурант</a>
+        </div>
+        <div class="hero-intro__image-wrapper"><img class="hero-intro__image" src="./images/catalog-bg.jpg" width="600"
+            height="450" alt="Высокоточная обработка металлических деталей на современном оборудовании"></div>
+      </div>
+    </section>
     <section class="catalog">
       <div class="catalog__container container">
-        <h1 class="catalog__title title">Каталог услуг</h1>
+        <h2 class="catalog__title title">Каталог услуг</h2>
         <ul class="catalog__list">
           <li class="catalog__item">
             <article class="catalog__card" data-service="turning">
@@ -90,23 +112,37 @@
                 <h2 class="catalog__card-title">Токарные и фрезерные ЧПУ работы</h2>
                 <p class="catalog__description">Высокоточная обработка металлов на современных станках с ЧПУ.
                   Изготовление деталей любой сложности.</p>
-                <div class="catalog__buttons"><button class="catalog__button catalog__button--details"
-                    type="button">Подробнее</button> <button class="catalog__button catalog__button--cart" type="button"
-                    data-name="Токарные и фрезерные ЧПУ работы">В корзину</button></div>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/turning.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Токарные и фрезерные ЧПУ работы">В корзину</button></div>
               </div>
             </article>
           </li>
           <li class="catalog__item">
             <article class="catalog__card" data-service="laser">
               <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/s-laser.jpg" width="320"
-                  height="240" alt="Лазерная и плазменная резка металла" loading="lazy"></div>
+                  height="240" alt="Лазерная резка металла" loading="lazy"></div>
               <div class="catalog__content">
-                <h2 class="catalog__card-title">Лазерная и плазменная резка металла</h2>
+                <h2 class="catalog__card-title">Лазерная резка металла</h2>
                 <p class="catalog__description">Точная резка металла с ровными и чистыми контурами. Прямолинейный и
                   криволинейный раскрой.</p>
-                <div class="catalog__buttons"><button class="catalog__button catalog__button--details"
-                    type="button">Подробнее</button> <button class="catalog__button catalog__button--cart" type="button"
-                    data-name="Лазерная и плазменная резка металла">В корзину</button></div>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/laser.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Лазерная резка металла">В корзину</button></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card" data-service="plasma">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/plasm.webp" width="320"
+                  height="240" alt="Плазменная резка металла" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Плазменная резка металла</h2>
+                <p class="catalog__description">Точная резка металла с ровными и чистыми контурами. Прямолинейный и
+                  криволинейный раскрой.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/plasma.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Плазменная резка металла">В корзину</button></div>
               </div>
             </article>
           </li>
@@ -118,9 +154,9 @@
                 <h2 class="catalog__card-title">Сверление отверстий</h2>
                 <p class="catalog__description">Профессиональное сверление отверстий до 30мм диаметром в металле
                   толщиной до 20мм.</p>
-                <div class="catalog__buttons"><button class="catalog__button catalog__button--details"
-                    type="button">Подробнее</button> <button class="catalog__button catalog__button--cart" type="button"
-                    data-name="Сверление отверстий">В корзину</button></div>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/holes.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Сверление отверстий">В корзину</button></div>
               </div>
             </article>
           </li>
@@ -129,12 +165,12 @@
               <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/s-bending.jpg" width="320"
                   height="240" alt="Гибка листового металла" loading="lazy"></div>
               <div class="catalog__content">
-                <h2 class="catalog__card-title">Гибка листового металла</h2>
+                <h2 class="catalog__card-title">Вальцовка и гибка листового металла</h2>
                 <p class="catalog__description">Точная гибка листового металла по заданным параметрам в минимальные
                   сроки.</p>
-                <div class="catalog__buttons"><button class="catalog__button catalog__button--details"
-                    type="button">Подробнее</button> <button class="catalog__button catalog__button--cart" type="button"
-                    data-name="Гибка листового металла">В корзину</button></div>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/bending.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Гибка листового металла">В корзину</button></div>
               </div>
             </article>
           </li>
@@ -143,12 +179,12 @@
               <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/s-welding.jpg" width="320"
                   height="240" alt="Сварочные работы" loading="lazy"></div>
               <div class="catalog__content">
-                <h2 class="catalog__card-title">Сварочные работы</h2>
+                <h2 class="catalog__card-title">Сварочные и монтажные работы</h2>
                 <p class="catalog__description">Профессиональная сварка металлов различными технологиями. Высокое
                   качество при доступной стоимости.</p>
-                <div class="catalog__buttons"><button class="catalog__button catalog__button--details"
-                    type="button">Подробнее</button> <button class="catalog__button catalog__button--cart" type="button"
-                    data-name="Сварочные работы">В корзину</button></div>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/welding.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Сварочные работы">В корзину</button></div>
               </div>
             </article>
           </li>
@@ -157,95 +193,200 @@
               <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/s-painting.jpg" width="320"
                   height="240" alt="Порошковая покраска металла" loading="lazy"></div>
               <div class="catalog__content">
-                <h2 class="catalog__card-title">Порошковая покраска металла</h2>
+                <h2 class="catalog__card-title">Порошковая и обычная покраска металла</h2>
                 <p class="catalog__description">Качественная порошковая покраска металлических изделий. Долговечное и
                   эстетичное покрытие.</p>
-                <div class="catalog__buttons"><button class="catalog__button catalog__button--details"
-                    type="button">Подробнее</button> <button class="catalog__button catalog__button--cart" type="button"
-                    data-name="Порошковая покраска металла">В корзину</button></div>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/painting.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Порошковая покраска металла">В корзину</button></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/gravirovka.webp" width="320"
+                  height="240" alt="Гравировка и маркировка металла" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Гравировка и маркировка металла</h2>
+                <p class="catalog__description">Гравировка и маркировка металлических изделий с использованием
+                  современных технологий.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/engraving.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Гравировка и маркировка металла">В корзину</button></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/proectirovanie.jpg"
+                  width="320" height="240" alt="Проектирование и разработка изделий" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Проектирование и разработка изделий</h2>
+                <p class="catalog__description">Профессиональное проектирование и разработка металлических изделий по
+                  индивидуальным требованиям.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/design.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Проектирование и разработка изделий">В корзину</button></div>
               </div>
             </article>
           </li>
         </ul>
       </div>
     </section>
-    <section class="contact-form">
-      <div class="contact-form__container container">
-        <h2 class="contact-form__title title">Не можете определиться с услугой?</h2>
-        <p class="contact-form__description">Заполните форму ниже, опишите вашу задачу, и наши специалисты помогут
-          подобрать оптимальное решение. Вы можете прикрепить чертежи, эскизы или фотографии для более точной
-          консультации.</p>
-        <form class="contact-form__form" id="catalogContactForm">
-          <div class="contact-form__field"><label class="contact-form__label" for="catalogContactName">Ваше имя <span
-                style="color: #dc3545;">*</span></label> <input class="contact-form__input" type="text"
-              id="catalogContactName" name="name" placeholder="Иван Иванов" required></div>
-          <div class="contact-form__field"><label class="contact-form__label" for="catalogContactPhone">Телефон <span
-                style="color: #dc3545;">*</span></label> <input class="contact-form__input" type="tel"
-              id="catalogContactPhone" name="phone" placeholder="+7 (___) ___-__-__" required></div>
-          <div class="contact-form__field"><label class="contact-form__label" for="catalogContactEmail">Email</label>
-            <input class="contact-form__input" type="email" id="catalogContactEmail" name="email"
-              placeholder="example@mail.ru">
-          </div>
-          <div class="contact-form__field"><label class="contact-form__label" for="catalogContactMessage">Описание
-              задачи <span style="color: #dc3545;">*</span></label> <textarea class="contact-form__textarea"
-              id="catalogContactMessage" name="message"
-              placeholder="Опишите, что вам необходимо изготовить, какие у вас требования и пожелания..."
-              required></textarea></div>
-          <div class="contact-form__field"><label class="contact-form__label" for="catalogContactFile">Прикрепить файлы
-              (чертежи, эскизы, фото)</label>
-            <div class="contact-form__file-wrapper"><input class="contact-form__file-input" type="file"
-                id="catalogContactFile" name="file" accept=".pdf,.jpg,.jpeg,.png,.dwg,.doc,.docx" multiple="multiple">
-              <label class="contact-form__file-label" for="catalogContactFile">Выбрать файлы</label> <span
-                class="contact-form__file-name" id="catalogFileName">Файл не выбран</span>
-            </div>
-          </div>
-          <div class="contact-form__submit-wrapper"><button class="contact-form__submit" type="submit">Отправить
-              заявку</button>
-            <p class="contact-form__note">* Обязательные поля для заполнения</p>
-          </div>
-          <div class="contact-form__success" id="catalogFormSuccess">Спасибо! Ваша заявка успешно отправлена. Мы
-            свяжемся с вами в ближайшее время.</div>
-        </form>
+    <section class="catalog">
+      <div class="catalog__container container">
+        <h2 class="catalog__title title">Каталог товаров</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="catalog__card" data-product="stairs-static">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/lest-static.webp"
+                  width="320" height="240" alt="Статичная приставная лестница" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Приставная лестница</h2>
+                <p class="catalog__description">Надежная приставная лестница из металла для работ на высоте. Прочная
+                  конструкция с антискользящими ступенями. Высота 2 метра, компактна в хранении. Идеальна для дома, дачи
+                  и производства.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/ladder-static.html">Подробнее</a> <button
+                    class="catalog__button catalog__button--cart" type="button"
+                    data-name="Статичная приставная лестница">В корзину</button></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card" data-product="stairs-telescopic">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/lest-tele.jpg" width="320"
+                  height="240" alt="Раздвижная телескопическая лестница" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Раздвижная телескопическая лестница</h2>
+                <p class="catalog__description">Компактная раздвижная лестница из алюминия. Регулируемая высота от 2 до
+                  5 метров. Удобна для хранения и транспортировки.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/ladder-tele.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Раздвижная телескопическая лестница">В корзину</button></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card" data-product="stairs-industrial">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/lest-prom.webp" width="320"
+                  height="240" alt="Промышленная стремянка усиленная" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Промышленная стремянка усиленная</h2>
+                <p class="catalog__description">Усиленная стремянка для промышленных объектов. Высота до 6 метров,
+                  грузоподъемность до 300 кг. С защитным ограждением и антискользящими ступенями.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/ladder-prom.html">Подробнее</a> <button class="catalog__button catalog__button--cart"
+                    type="button" data-name="Промышленная стремянка усиленная">В корзину</button></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card" data-product="mailbox-standard">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/mailbox-standart.webp"
+                  width="320" height="240" alt="Почтовый ящик стандартный" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Почтовый ящик стандартный</h2>
+                <p class="catalog__description">Классический металлический почтовый ящик с замком. Размер 300×250×100
+                  мм. Порошковая покраска в любой цвет RAL.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/mailbox-standart.html">Подробнее</a> <button
+                    class="catalog__button catalog__button--cart" type="button" data-name="Почтовый ящик стандартный">В
+                    корзину</button></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card" data-product="mailbox-premium">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/mailbox-premium.jpg"
+                  width="320" height="240" alt="Почтовый ящик премиум" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Почтовый ящик премиум</h2>
+                <p class="catalog__description">Увеличенный почтовый ящик с отделением для газет. Размер 400×350×150 мм.
+                  Нержавеющая сталь или порошковая покраска. Возможна гравировка номера дома.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/mailbox-premium.html">Подробнее</a> <button
+                    class="catalog__button catalog__button--cart" type="button" data-name="Почтовый ящик премиум">В
+                    корзину</button></div>
+              </div>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="catalog__card" data-product="business-cards">
+              <div class="catalog__image-wrapper"><img class="catalog__image" src="./images/vizitka.jpg" width="320"
+                  height="240" alt="Стильные металлические визитки" loading="lazy"></div>
+              <div class="catalog__content">
+                <h2 class="catalog__card-title">Стильные металлические визитки</h2>
+                <p class="catalog__description">Эксклюзивные визитки из нержавеющей стали или алюминия. Лазерная
+                  гравировка или порезка. Толщина 0,5 мм. Индивидуальный дизайн и покрытие.</p>
+                <div class="catalog__buttons"><a class="catalog__button catalog__button--details"
+                    href="catalog/business-card.html">Подробнее</a> <button
+                    class="catalog__button catalog__button--cart" type="button"
+                    data-name="Стильные металлические визитки">В корзину</button></div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="cta__container container">
+        <h2 class="cta__title title">Не можете определиться с услугой?</h2>
+        <p class="cta__text">Свяжитесь с нами для получения консультации, расчета стоимости или оформления заказа. Наши
+          специалисты ответят на все ваши вопросы и помогут подобрать оптимальное решение.</p><a class="cta__button"
+          href="cart.html">Отправить заявку</a>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__container container">
       <div class="footer__content">
-        <div class="footer__title-wrapper"><a class="footer__title" href="/">ООО "Адэмар"</a>
-          <p class="footer__subtitle">Металлоизделия на заказ</p>
+        <div class="footer__column">
+          <div class="footer__title-wrapper"><a class="footer__title" href="#">ООО "Адэмар"</a>
+            <p class="footer__subtitle">Металлоизделия на заказ</p>
+          </div>
         </div>
-        <ul class="footer__list footer__list--nav">
-          <li class="footer__item"><a class="footer__text" href="/">Главная</a></li>
-          <li class="footer__item"><a class="footer__text" href="/about.html">О нас</a></li>
-          <li class="footer__item"><a class="footer__text" href="/catalog.html">Каталог</a></li>
-          <li class="footer__item"><a class="footer__text" href="/contacts.html">Контакты</a></li>
-        </ul>
-        <ul class="footer__list">
-          <li class="footer__item">
-            <p class="footer__text">ОГРН: 1237400039073</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">ИНН: 7457014051</p>
-          </li>
-          <li class="footer__item">
-            <p class="footer__text">КПП: 745701001</p>
-          </li>
-        </ul>
-      </div>
+        <nav class="footer__column">
+          <h2 class="footer__heading visually-hidden">Контакты</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__text footer__text--phone" href="tel:+79823304737">8 982 330 47
+                37</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--mail"
+                href="mailto:ademar_zakaz@mail.ru">ademar_zakaz@mail.ru</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--whatsapp" href="https://wa.me/79823304737"
+                target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li class="footer__item"><a class="footer__text footer__text--telegram" href="https://t.me/+79823304737"
+                target="_blank" rel="noopener noreferrer">Telegram</a></li>
+          </ul>
+        </nav>
+        <nav class="footer__column">
+          <h2 class="footer__heading visually-hidden">Навигация</h2>
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__text" href="/ademar">Главная</a></li>
+            <li class="footer__item"><a class="footer__text" href="about.html">О нас</a></li>
+            <li class="footer__item"><a class="footer__text" href="catalog.html">Каталог</a></li>
+            <li class="footer__item"><a class="footer__text" href="faq.html">FAQ</a></li>
+            <li class="footer__item"><a class="footer__text" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__column footer__column--legal">
+          <h2 class="footer__heading visually-hidden">Компания</h2>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <p class="footer__text">ОГРН: 1237400039073</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">ИНН: 7457014051</p>
+            </li>
+            <li class="footer__item">
+              <p class="footer__text">КПП: 745701001</p>
+            </li>
+          </ul>
+        </div>
+      </div><a class="footer__privacy-link" href="privacy-policy.html">Политика конфиденциальности</a>
     </div>
-  </footer><button class="scroll-up" type="button"><span
-      class="visually-hidden">Наверх</span></button><!-- Modal for service details -->
-  <div class="catalog__modal">
-    <div class="catalog__modal-content"><button class="catalog__modal-close" type="button" aria-label="Закрыть"><span
-          class="visually-hidden">Закрыть</span></button>
-      <h3 class="catalog__modal-title"></h3><img class="catalog__modal-image" src="" alt="" loading="lazy">
-      <p class="catalog__modal-description"></p><button class="catalog__modal-button catalog__button--cart"
-        type="button">Добавить в корзину</button>
-    </div>
-  </div>
+  </footer><button class="scroll-up" type="button"><span class="visually-hidden">Наверх</span></button>
   <script src="scripts/main.js" type="module"></script>
-  <script src="scripts/catalog.js" type="module"></script>
 </body>
 
 </html>
