@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".contacts__map");e&&(e.addEventListener("click",()=>{e.classList.add("contacts__map--active")}),e.addEventListener("mouseleave",()=>{e.classList.remove("contacts__map--active")}))});

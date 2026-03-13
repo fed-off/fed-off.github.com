@@ -1,0 +1,1 @@
+{let e=document.querySelector(".trust__clients-track");e&&(Array.from(e.children).forEach(n=>{let t=n.cloneNode(!0);e.appendChild(t)}),e.style.animation="scroll 45s linear infinite",e.addEventListener("mouseenter",()=>{e.style.animationPlayState="paused"}),e.addEventListener("mouseleave",()=>{e.style.animationPlayState="running"}))}
