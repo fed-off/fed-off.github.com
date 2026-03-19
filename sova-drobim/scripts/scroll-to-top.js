@@ -1,0 +1,1 @@
+var o=document.querySelector(".scroll-top");o&&(window.addEventListener("scroll",()=>{window.scrollY>1e3?o.classList.add("scroll-top--visible"):o.classList.remove("scroll-top--visible")},{passive:!0}),o.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})}));

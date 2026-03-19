@@ -16,21 +16,47 @@
   <link rel="icon" href="./favicons/favicon512.png" type="image/png" sizes="512x512">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./styles/styles.css">
+  <!-- Open Graph & Twitter -->
+  <meta property="og:url" content="https://fed-off.github.io/sova-drobim/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="ООО «Ашинский опытно-механический завод»">
+  <meta property="og:title"
+    content="Производство промышленного оборудования в Аше - ООО «Ашинский опытно-механический завод»">
+  <meta property="og:description"
+    content="Производство промышленного оборудования: ленточные конвейеры, измельчители древесины, каркасы ангаров.">
+  <!-- Image -->
+  <meta property="og:image" content="https://fed-off.github.io/sova-drobim/images/opengraph.jpg">
+  <meta property="og:image:secure_url" content="https://fed-off.github.io/sova-drobim/images/opengraph.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Логотип компании ООО «Ашинский опытно-механический завод»">
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+    content="Производство промышленного оборудования в Аше - ООО «Ашинский опытно-механический завод»">
+  <meta name="twitter:description"
+    content="Производство промышленного оборудования: ленточные конвейеры, измельчители древесины, каркасы ангаров.">
+  <meta name="twitter:image" content="https://fed-off.github.io/sova-drobim/images/opengraph.jpg">
+  <!-- /Open Graph & Twitter -->
 </head>
 
 <body>
   <header class="header">
     <div class="container">
       <div class="header__logo-wrapper">
-        <a class="header__logo" href="/" aria-label="На главную">
-          <img class="header__logo-image" src="./images/logo.png" width="60" height="60" alt="Логотип компании">
+        <a class="header__logo" href="/" aria-label="На главную" aria-current="page">
+          <img class="header__logo-image" src="./images/logo.png" width="60" height="60"
+            alt="Логотип компании ООО «Ашинский опытно-механический завод»">
         </a>
+        <span class="header__logo-abbr">АОМЗ</span>
       </div>
 
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link header__nav-link--active" href="#">Главная</a>
+            <a class="header__nav-link header__nav-link--active" href="/" aria-current="page">Главная</a>
           </li>
           <li class="header__nav-item">
             <a class="header__nav-link" href="#">О нас</a>
@@ -53,7 +79,11 @@
         </a>
         <button class="header__contacts-button" type="button">Связаться</button>
       </div>
-      <button class="header__menu-button" type="button" aria-label="Открыть меню"></button>
+      <button class="header__menu-button" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__menu-button-line header__menu-button-line--top"></span>
+        <span class="header__menu-button-line header__menu-button-line--middle"></span>
+        <span class="header__menu-button-line header__menu-button-line--bottom"></span>
+      </button>
     </div>
     <div class="header__contacts-modal">
       <div class="header__contacts-content">
@@ -101,82 +131,60 @@
   <main>
     <section class="hero">
       <div class="container">
-        <div class="hero__header">
-          <h1 class="hero__title">Ашинский <br>опытно-механический завод</h1>
-          <p class="hero__description">
-            ООО "Ашинский опытно-механический завод" - ваш надежный партнер в производстве промышленного оборудования.
-            Современное производство, двойной контроль качества, доставка продукции по РФ и СНГ.
-            Более 10 лет успешной работы. Бесплатная доставка и консультация специалистов.
-          </p>
-          <a class="hero__button" href="#">В каталог</a>
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">Ашинский опытно-механический завод</h1>
+            <p class="hero__description">
+              ООО «Ашинский опытно-механический завод» — ваш надёжный партнёр в производстве промышленного оборудования.
+              Современное производство, двойной контроль качества, доставка по РФ и СНГ.
+              Более 10 лет успешной работы. Бесплатная доставка и консультация специалистов.
+            </p>
+            <a class="hero__button" href="#">В каталог</a>
+          </div>
+
+          <h2 class="visually-hidden">Наш ассортимент</h2>
+          <ul class="hero__cards">
+            <li class="hero__card">
+              <img class="hero__card-image" src="./images/hero-rumble.jpg" width="400" height="300" alt="">
+              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Барабанные грохоты</a></h3>
+            </li>
+
+            <li class="hero__card">
+              <img class="hero__card-image" src="./images/hero-woodchipper.jpg" width="400" height="300" alt="">
+              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Измельчители</a></h3>
+            </li>
+
+            <li class="hero__card">
+              <img class="hero__card-image" src="./images/hero-conveyor.jpeg" width="400" height="300" alt="">
+              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Ленточные конвейеры</a></h3>
+            </li>
+
+            <li class="hero__card">
+              <img class="hero__card-image" src="./images/hero-sova.jpg" width="400" height="300" alt="">
+              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Щепорезы</a></h3>
+            </li>
+
+            <li class="hero__card">
+              <img class="hero__card-image" src="./images/hero-hangar.jpg" width="400" height="300" alt="">
+              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Каркасы ангаров</a></h3>
+            </li>
+
+            <li class="hero__card">
+              <img class="hero__card-image" src="./images/hero-components.jpg" width="400" height="300" alt="">
+              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Комплектующие</a></h3>
+            </li>
+          </ul>
         </div>
-
-        <ul class="hero__cards">
-          <li class="hero__card">
-            <a class="hero__card-link" href="#">
-              <img class="hero__card-image" src="./images/hero-woodchipper.jpg" width="220" height="216" alt="">
-            </a>
-            <h3 class="hero__card-title">Измельчители</h3>
-          </li>
-
-          <li class="hero__card">
-            <a class="hero__card-link" href="#">
-              <img class="hero__card-image" src="./images/hero-conveyor.jpeg" width="220" height="216" alt="">
-            </a>
-            <h3 class="hero__card-title">Ленточные конвейеры</h3>
-          </li>
-
-          <li class="hero__card">
-            <a class="hero__card-link" href="#">
-              <img class="hero__card-image" src="./images/hero-sova.jpg" width="220" height="216" alt="">
-            </a>
-            <h3 class="hero__card-title">Щепорезы</h3>
-          </li>
-
-          <li class="hero__card">
-            <a class="hero__card-link" href="#">
-              <img class="hero__card-image" src="./images/hero-rumble.jpg" width="220" height="216" alt="">
-            </a>
-            <h3 class="hero__card-title">Барабанные грохоты</h3>
-          </li>
-
-          <li class="hero__card">
-            <a class="hero__card-link" href="#">
-              <img class="hero__card-image" src="./images/hero-hangar.jpg" width="220" height="216" alt="">
-            </a>
-            <h3 class="hero__card-title">Каркасы ангаров</h3>
-          </li>
-
-          <li class="hero__card">
-            <a class="hero__card-link" href="#">
-              <img class="hero__card-image" src="./images/hero-components.jpg" width="220" height="216" alt="">
-            </a>
-            <h3 class="hero__card-title">Комплектующие</h3>
-          </li>
-
-          <li class="hero__card hero__card--benefit">
-            <h3 class="hero__card-title">Бесплатная консультация</h3>
-          </li>
-
-          <li class="hero__card hero__card--benefit">
-            <h3 class="hero__card-title">Бесплатная доставка</h3>
-          </li>
-
-          <li class="hero__card hero__card--benefit">
-            <h3 class="hero__card-title">Выгодные условия лизинга</h3>
-            <a class="hero__card-button" href="#">Рассчитать</a>
-          </li>
-        </ul>
       </div>
     </section>
 
-    <section class="trust">
+    <section class="trust reveal">
       <div class="container">
         <h2 class="trust__title">Нам доверяют</h2>
 
         <div class="trust__content">
           <article class="trust__card">
-            <h3 class="trust__card-title">О нашем предприятии</h3>
+            <h3 class="trust__card-title">О предприятии</h3>
             <p class="trust__card-text">
               Наше предприятие занимается выпуском оборудования более тринадцати лет, наращивая опыт в разработке и
               изготовлении разнообразного оборудования, реализуя сложные и интересные проекты. Собственный склад с
@@ -191,6 +199,24 @@
               Общаясь c сотнями клиентов на протяжении 13 лет работы, мы стали лучше понимать, как наше оборудование
               помогает решать их задачи и проблемы. С удовольствием ответим на ваши вопросы о возможностях и способах
               применения нашей продукции, нюансах эксплуатации и обслуживания.
+            </p>
+          </article>
+
+          <article class="trust__card">
+            <h3 class="trust__card-title">Лизинг оборудования</h3>
+            <p class="trust__card-text">
+              Оформите покупку в лизинг через Первоуральскбанк: финансирование от 400 тыс. до 150 млн рублей, аванс от
+              0%, срок — до 60 месяцев. Аннуитетный, дегрессивный или индивидуальный график платежей. Предварительное
+              КП — в течение одного часа, выход на сделку — от 3 дней.
+            </p>
+          </article>
+
+          <article class="trust__card">
+            <h3 class="trust__card-title">Бесплатная доставка</h3>
+            <p class="trust__card-text">
+              Доставляем оборудование до терминала транспортной компании бесплатно — дальнейшая доставка до вашего
+              адреса осуществляется за счёт покупателя по тарифам перевозчика. Поможем подобрать транспортную компанию и
+              согласовать наиболее выгодные условия по вашему маршруту.
             </p>
           </article>
         </div>
@@ -221,12 +247,12 @@
       </div>
     </section>
 
-    <section class="delivery">
+    <section class="delivery reveal">
       <div class="container">
         <h2 class="delivery__title">Доставка оборудования</h2>
 
         <div class="delivery__grid">
-          <article class="delivery__card delivery__card--main">
+          <div class="delivery__card delivery__card--main">
             <h3 class="delivery__card-title">Доставка по России</h3>
             <p class="delivery__card-text">
               Поможем вам организовать доставку купленного оборудования в любую точку России!
@@ -243,9 +269,9 @@
                 Обратите внимание, что доставка до филиала транспортной компании осуществляется бесплатно!
               </p>
             </div>
-          </article>
+          </div>
 
-          <article class="delivery__card delivery__card--companies">
+          <div class="delivery__card delivery__card--companies">
             <h3 class="delivery__card-title">Транспортные компании</h3>
             <ul class="delivery__companies-list">
               <li class="delivery__company-item">ПЭК</li>
@@ -253,19 +279,19 @@
               <li class="delivery__company-item">Энергия</li>
               <li class="delivery__company-item">Луч</li>
             </ul>
-          </article>
+          </div>
 
-          <article class="delivery__card delivery__card--pickup">
+          <div class="delivery__card delivery__card--pickup">
             <h3 class="delivery__card-title">Самовывоз</h3>
             <p class="delivery__card-text">
               У вас есть возможность забрать груз самостоятельно. В этом случае необходимо согласовать дату приезда и
               не забыть взять с собой доверенность на получение. Мы также готовы бесплатно загрузить оборудование на
               нашем складе.
             </p>
-          </article>
+          </div>
 
-          <article class="delivery__card delivery__card--requirements">
-            <h3 class="delivery__card-title">Для доставки необходимо указать:</h3>
+          <div class="delivery__card delivery__card--requirements">
+            <h3 class="delivery__card-title">Данные для доставки</h3>
             <ul class="delivery__checklist">
               <li class="delivery__checklist-item">
                 <span class="delivery__checklist-checkbox"></span>
@@ -292,12 +318,12 @@
                 <span class="delivery__checklist-text">Возможность разгрузки в выходные и праздничные дни</span>
               </li>
             </ul>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="faq">
+    <section class="faq reveal">
       <div class="container">
         <h2 class="faq__title">Часто задаваемые вопросы</h2>
 
@@ -409,7 +435,7 @@
       </div>
     </section>
 
-    <article class="cta">
+    <article class="cta reveal">
       <div class="container">
         <div class="cta__content">
           <h2 class="cta__title">Остались вопросы?</h2>
@@ -422,7 +448,7 @@
       </div>
     </article>
 
-    <article class="contacts">
+    <article class="contacts reveal">
       <div class="container">
         <div class="contacts__card">
           <h2 class="contacts__title">Контакты</h2>
@@ -475,7 +501,7 @@
               </div>
               <div class="contacts__info-content">
                 <h3 class="contacts__info-label">Адрес</h3>
-                <p class="contacts__info-text">Челябинская обл, г Аша, ул Узкоколейная, 1А</p>
+                <p class="contacts__info-text">Челябинская обл, г Аша, <br>ул Узкоколейная, 1А</p>
               </div>
             </div>
 
@@ -491,6 +517,7 @@
               <div class="contacts__info-content">
                 <h3 class="contacts__info-label">Режим работы</h3>
                 <p class="contacts__info-text">Пн-Пт: 08:00 - 17:00</p>
+                <p class="contacts__info-text">Перерыв: 12:00 - 13:00</p>
                 <p class="contacts__info-text">Сб-Вс: Выходной</p>
               </div>
             </div>
@@ -540,7 +567,7 @@
         <!-- Левая часть: логотип, слоган, режим работы -->
         <div class="footer__brand">
           <div class="footer__brand-top">
-            <p class="footer__logo">ООО "АОМЗ"</p>
+            <p class="footer__logo">ООО «АОМЗ»</p>
             <p class="footer__tagline">Производство промышленного <br>оборудования</p>
           </div>
 
@@ -557,7 +584,7 @@
           <nav class="footer__nav">
             <ul class="footer__nav-list">
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="#hero">Главная</a>
+                <a class="footer__nav-link" href="/" aria-current="page">Главная</a>
               </li>
               <li class="footer__nav-item">
                 <a class="footer__nav-link" href="#trust">О нас</a>
@@ -644,6 +671,7 @@
       </div>
     </div>
   </footer>
+  <button class="scroll-top" type="button" aria-label="Наверх"></button>
   <script src="./scripts/main.js" type="module"></script>
 </body>
 
