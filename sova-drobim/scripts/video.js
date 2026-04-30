@@ -1,0 +1,1 @@
+var o=document.querySelectorAll(".video__frame");o.forEach(r=>{let e=r.querySelector(".video__iframe"),t=r.querySelector(".video__placeholder");if(!e||!t)return;let c=e.getAttribute("src");c&&c!=="#"&&(e.classList.add("video__iframe--active"),t.hidden=!0)});

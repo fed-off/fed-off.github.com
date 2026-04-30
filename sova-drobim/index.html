@@ -14,10 +14,15 @@
   <link rel="apple-touch-icon" href="./favicons/favicon180.png" type="image/png" sizes="180x180">
   <link rel="icon" href="./favicons/favicon192.png" type="image/png" sizes="192x192">
   <link rel="icon" href="./favicons/favicon512.png" type="image/png" sizes="512x512">
+  <!-- Font Preloads -->
+  <link rel="preload" href="./fonts/ibm-plex-sans-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ibm-plex-sans-500.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/exo2-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/exo2-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <!-- Stylesheet -->
   <link rel="stylesheet" href="./styles/styles.css">
   <!-- Open Graph & Twitter -->
-  <meta property="og:url" content="https://fed-off.github.io/sova-drobim/">
+  <meta property="og:url" content="https://sova-drobim.ru/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:site_name" content="ООО «Ашинский опытно-механический завод»">
@@ -26,8 +31,8 @@
   <meta property="og:description"
     content="Производство промышленного оборудования: ленточные конвейеры, измельчители древесины, каркасы ангаров.">
   <!-- Image -->
-  <meta property="og:image" content="https://fed-off.github.io/sova-drobim/images/opengraph.jpg">
-  <meta property="og:image:secure_url" content="https://fed-off.github.io/sova-drobim/images/opengraph.jpg">
+  <meta property="og:image" content="https://sova-drobim.ru/images/opengraph.jpg">
+  <meta property="og:image:secure_url" content="https://sova-drobim.ru/images/opengraph.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -38,7 +43,7 @@
     content="Производство промышленного оборудования в Аше - ООО «Ашинский опытно-механический завод»">
   <meta name="twitter:description"
     content="Производство промышленного оборудования: ленточные конвейеры, измельчители древесины, каркасы ангаров.">
-  <meta name="twitter:image" content="https://fed-off.github.io/sova-drobim/images/opengraph.jpg">
+  <meta name="twitter:image" content="https://sova-drobim.ru/images/opengraph.jpg">
   <!-- /Open Graph & Twitter -->
 </head>
 
@@ -46,35 +51,35 @@
   <header class="header">
     <div class="container">
       <div class="header__logo-wrapper">
-        <a class="header__logo" href="/" aria-label="На главную" aria-current="page">
+        <a class="header__logo" href="./" aria-label="На главную" aria-current="page">
           <img class="header__logo-image" src="./images/logo.png" width="60" height="60"
             alt="Логотип компании ООО «Ашинский опытно-механический завод»">
+          <span class="header__logo-abbr">АОМЗ</span>
         </a>
-        <span class="header__logo-abbr">АОМЗ</span>
       </div>
 
       <nav class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-item">
-            <a class="header__nav-link header__nav-link--active" href="/" aria-current="page">Главная</a>
+            <a class="header__nav-link header__nav-link--active" href="./" aria-current="page">Главная</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">О нас</a>
+            <a class="header__nav-link" href="./about.html">О нас</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Каталог</a>
+            <a class="header__nav-link" href="./catalog.html">Каталог</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Лизинг</a>
+            <a class="header__nav-link" href="./leasing.html">Лизинг</a>
           </li>
           <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Контакты</a>
+            <a class="header__nav-link" href="./contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
 
       <div class="header__actions">
-        <a class="header__cart" href="#" aria-label="Корзина">
+        <a class="header__cart" href="./cart.html" aria-label="Корзина">
           <span class="header__cart-badge">0</span>
         </a>
         <button class="header__contacts-button" type="button">Связаться</button>
@@ -91,36 +96,37 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <h2 class="header__contacts-title">Свяжитесь с нами</h2>
-        <ul class="header__contacts-list">
+        <ul class="header__contacts-list editable-list">
           <li class="header__contacts-item">
-            <a class="header__contacts-link header__contacts-link--phone" href="tel:+79120438833">
+            <a class="header__contacts-link header__contacts-link--phone editable-link" href="tel:+79120438833">
               +7 (912) 043-88-33
             </a>
           </li>
           <li class="header__contacts-item">
-            <a class="header__contacts-link header__contacts-link--phone" href="tel:+79127726599">
+            <a class="header__contacts-link header__contacts-link--phone editable-link" href="tel:+79127726599">
               +7 (912) 772-65-99
             </a>
           </li>
           <li class="header__contacts-item">
-            <a class="header__contacts-link header__contacts-link--mail" href="mailto:TdAOMZ@mail.ru">
+            <a class="header__contacts-link header__contacts-link--mail editable-link" href="mailto:TdAOMZ@mail.ru">
               TdAOMZ@mail.ru
             </a>
           </li>
           <li class="header__contacts-item">
-            <a class="header__contacts-link header__contacts-link--mail" href="mailto:sovadrobim@gmail.com">
+            <a class="header__contacts-link header__contacts-link--mail editable-link"
+              href="mailto:sovadrobim@gmail.com">
               sovadrobim@gmail.com
             </a>
           </li>
           <li class="header__contacts-item">
-            <a class="header__contacts-link header__contacts-link--telegram" href="https://t.me/+79120438833"
-              target="_blank" rel="noopener noreferrer">
+            <a class="header__contacts-link header__contacts-link--telegram editable-link"
+              href="https://t.me/+79120438833" target="_blank" rel="noopener noreferrer">
               Telegram
             </a>
           </li>
           <li class="header__contacts-item">
-            <a class="header__contacts-link header__contacts-link--whatsapp" href="https://wa.me/79120438833"
-              target="_blank" rel="noopener noreferrer">
+            <a class="header__contacts-link header__contacts-link--whatsapp editable-link"
+              href="https://wa.me/79120438833" target="_blank" rel="noopener noreferrer">
               WhatsApp
             </a>
           </li>
@@ -133,157 +139,233 @@
       <div class="container">
         <div class="hero__inner">
           <div class="hero__content">
-            <h1 class="hero__title">Ашинский опытно-механический завод</h1>
-            <p class="hero__description">
+            <h1 class="hero__title editable-text">Ашинский опытно-механический завод</h1>
+            <p class="hero__description editable-text">
               ООО «Ашинский опытно-механический завод» — ваш надёжный партнёр в производстве промышленного оборудования.
               Современное производство, двойной контроль качества, доставка по РФ и СНГ.
               Более 10 лет успешной работы. Бесплатная доставка и консультация специалистов.
             </p>
-            <a class="hero__button" href="#">В каталог</a>
+            <a class="hero__button editable-link" href="./catalog.html">В каталог</a>
           </div>
 
           <h2 class="visually-hidden">Наш ассортимент</h2>
-          <ul class="hero__cards">
+          <ul class="hero__cards editable-list">
             <li class="hero__card">
-              <img class="hero__card-image" src="./images/hero-rumble.jpg" width="400" height="300" alt="">
-              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Барабанные грохоты</a></h3>
+              <img class="hero__card-image editable-image" src="./images/hero-rumble.jpg" width="400" height="300"
+                alt="">
+              <h3 class="hero__card-title">
+                <a class="hero__card-link editable-link" href="./catalog.html?category=барабанные+грохоты">
+                  Барабанные <br>грохоты
+                </a>
+              </h3>
             </li>
 
             <li class="hero__card">
-              <img class="hero__card-image" src="./images/hero-woodchipper.jpg" width="400" height="300" alt="">
-              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Измельчители</a></h3>
+              <img class="hero__card-image editable-image" src="./images/hero-woodchipper.jpg" width="400" height="300"
+                alt="">
+              <h3 class="hero__card-title">
+                <a class="hero__card-link editable-link" href="./catalog.html?category=измельчители+древесины">
+                  Измельчители <br>древесины
+                </a>
+              </h3>
             </li>
 
             <li class="hero__card">
-              <img class="hero__card-image" src="./images/hero-conveyor.jpeg" width="400" height="300" alt="">
-              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Ленточные конвейеры</a></h3>
+              <img class="hero__card-image editable-image" src="./images/hero-conveyor.jpeg" width="400" height="300"
+                alt="">
+              <h3 class="hero__card-title">
+                <a class="hero__card-link editable-link" href="./catalog.html?category=ленточные+конвейеры">
+                  Ленточные <br>конвейеры
+                </a>
+              </h3>
             </li>
 
             <li class="hero__card">
-              <img class="hero__card-image" src="./images/hero-sova.jpg" width="400" height="300" alt="">
-              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Щепорезы</a></h3>
+              <img class="hero__card-image editable-image" src="./images/hero-sova.jpg" width="400" height="300" alt="">
+              <h3 class="hero__card-title">
+                <a class="hero__card-link editable-link" href="./catalog.html?category=щепорезы">
+                  Щепорезы
+                </a>
+              </h3>
             </li>
 
             <li class="hero__card">
-              <img class="hero__card-image" src="./images/hero-hangar.jpg" width="400" height="300" alt="">
-              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Каркасы ангаров</a></h3>
+              <img class="hero__card-image editable-image" src="./images/hero-hangar.jpg" width="400" height="300"
+                alt="">
+              <h3 class="hero__card-title">
+                <a class="hero__card-link editable-link" href="./catalog.html?category=каркасы+ангаров">
+                  Каркасы ангаров
+                </a>
+              </h3>
             </li>
 
             <li class="hero__card">
-              <img class="hero__card-image" src="./images/hero-components.jpg" width="400" height="300" alt="">
-              <h3 class="hero__card-title"><a class="hero__card-link" href="#">Комплектующие</a></h3>
+              <img class="hero__card-image editable-image" src="./images/hero-components.jpg" width="400" height="300"
+                alt="">
+              <h3 class="hero__card-title">
+                <a class="hero__card-link editable-link" href="./catalog.html?category=комплектующие">
+                  Комплектующие
+                </a>
+              </h3>
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="trust reveal">
+    <hr class="divider">
+
+    <section class="trust">
       <div class="container">
         <h2 class="trust__title">Нам доверяют</h2>
 
-        <div class="trust__content">
-          <article class="trust__card">
-            <h3 class="trust__card-title">О предприятии</h3>
-            <p class="trust__card-text">
-              Наше предприятие занимается выпуском оборудования более тринадцати лет, наращивая опыт в разработке и
-              изготовлении разнообразного оборудования, реализуя сложные и интересные проекты. Собственный склад с
-              запасом продукции, сырья и комплектующих, квалифицированные инженеры и рабочие позволяют выполнять даже
-              крупные заказы качественно и в сжатые сроки.
-            </p>
-          </article>
+        <ul class="trust__content editable-list">
+          <li>
+            <article class="info-card">
+              <div class="info-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              <h3 class="info-card__title editable-text">О предприятии</h3>
+              <p class="info-card__text editable-text">
+                Наше предприятие занимается выпуском оборудования более тринадцати лет, наращивая опыт в разработке и
+                изготовлении разнообразного оборудования, реализуя сложные и интересные проекты. Собственный склад с
+                запасом продукции, сырья и комплектующих, квалифицированные инженеры и рабочие позволяют выполнять даже
+                крупные заказы качественно и в сжатые сроки.
+              </p>
+            </article>
+          </li>
 
-          <article class="trust__card">
-            <h3 class="trust__card-title">Бесплатная консультация</h3>
-            <p class="trust__card-text">
-              Общаясь c сотнями клиентов на протяжении 13 лет работы, мы стали лучше понимать, как наше оборудование
-              помогает решать их задачи и проблемы. С удовольствием ответим на ваши вопросы о возможностях и способах
-              применения нашей продукции, нюансах эксплуатации и обслуживания.
-            </p>
-          </article>
+          <li>
+            <article class="info-card">
+              <div class="info-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z" fill="currentColor" />
+                </svg>
+              </div>
+              <h3 class="info-card__title editable-text">Бесплатная консультация</h3>
+              <p class="info-card__text editable-text">
+                Общаясь c сотнями клиентов на протяжении 13 лет работы, мы стали лучше понимать, как наше оборудование
+                помогает решать их задачи и проблемы. С удовольствием ответим на ваши вопросы о возможностях и способах
+                применения нашей продукции, нюансах эксплуатации и обслуживания.
+              </p>
+            </article>
+          </li>
 
-          <article class="trust__card">
-            <h3 class="trust__card-title">Лизинг оборудования</h3>
-            <p class="trust__card-text">
-              Оформите покупку в лизинг через Первоуральскбанк: финансирование от 400 тыс. до 150 млн рублей, аванс от
-              0%, срок — до 60 месяцев. Аннуитетный, дегрессивный или индивидуальный график платежей. Предварительное
-              КП — в течение одного часа, выход на сделку — от 3 дней.
-            </p>
-          </article>
+          <li>
+            <article class="info-card">
+              <div class="info-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 4H4c-1.11 0-2 .89-2 2v12c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              <h3 class="info-card__title editable-text">Лизинг оборудования</h3>
+              <p class="info-card__text editable-text">
+                Оформите покупку в лизинг через Первоуральскбанк: финансирование от 400 тыс. до 150 млн рублей, аванс от
+                0%, срок — до 60 месяцев. Аннуитетный, дегрессивный или индивидуальный график платежей. Предварительное
+                КП — в течение одного часа, выход на сделку — от 3 дней.
+              </p>
+            </article>
+          </li>
 
-          <article class="trust__card">
-            <h3 class="trust__card-title">Бесплатная доставка</h3>
-            <p class="trust__card-text">
-              Доставляем оборудование до терминала транспортной компании бесплатно — дальнейшая доставка до вашего
-              адреса осуществляется за счёт покупателя по тарифам перевозчика. Поможем подобрать транспортную компанию и
-              согласовать наиболее выгодные условия по вашему маршруту.
-            </p>
-          </article>
-        </div>
+          <li>
+            <article class="info-card">
+              <div class="info-card__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zm-.5 1.5l1.96 2.5H17V9.5h2.5zM6 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm2.22-3c-.55-.61-1.35-1-2.22-1s-1.67.39-2.22 1H3V6h12v9H8.22zm9.78 3c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1z"
+                    fill="currentColor" />
+                </svg>
+              </div>
+              <h3 class="info-card__title editable-text">Бесплатная доставка</h3>
+              <p class="info-card__text editable-text">
+                Доставляем оборудование до терминала транспортной компании бесплатно — дальнейшая доставка до вашего
+                адреса осуществляется за счёт покупателя по тарифам перевозчика. Поможем подобрать транспортную компанию
+                и согласовать наиболее выгодные условия по вашему маршруту.
+              </p>
+            </article>
+          </li>
+        </ul>
 
         <div class="trust__clients">
           <h3 class="visually-hidden">Наши клиенты</h3>
-          <ul class="trust__clients-track">
+          <ul class="trust__clients-track editable-list">
             <li class="trust__client-logo">
-              <img src="./images/logo-gazprom.jpg" width="140" height="80" alt="Газпром">
+              <img class="editable-image" src="./images/logo-gazprom.jpg" width="140" height="80" alt="Газпром">
             </li>
             <li class="trust__client-logo">
-              <img src="./images/logo-promresurs.jpg" width="140" height="80" alt="Промресурс">
+              <img class="editable-image" src="./images/logo-promresurs.jpg" width="140" height="80" alt="Промресурс">
             </li>
             <li class="trust__client-logo">
-              <img src="./images/logo-ileko.jpg" width="140" height="80" alt="Илеко">
+              <img class="editable-image" src="./images/logo-ileko.jpg" width="140" height="80" alt="Илеко">
             </li>
             <li class="trust__client-logo">
-              <img src="./images/logo-adzhigardak.jpg" width="140" height="80" alt="Аджигардак">
+              <img class="editable-image" src="./images/logo-adzhigardak.jpg" width="140" height="80" alt="Аджигардак">
             </li>
             <li class="trust__client-logo">
-              <img src="./images/logo-stroyenergo.jpg" width="140" height="80" alt="Стройэнерго">
+              <img class="editable-image" src="./images/logo-stroyenergo.jpg" width="140" height="80" alt="Стройэнерго">
             </li>
             <li class="trust__client-logo">
-              <img src="./images/logo-belomorkanal.jpg" width="140" height="80" alt="Беломорско-Балтийский канал">
+              <img class="editable-image" src="./images/logo-belomorkanal.jpg" width="140" height="80"
+                alt="Беломорско-Балтийский канал">
             </li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section class="delivery reveal">
+    <hr class="divider">
+
+    <section class="delivery">
       <div class="container">
-        <h2 class="delivery__title">Доставка оборудования</h2>
+        <h2 class="delivery__title editable-text">Доставка оборудования</h2>
 
         <div class="delivery__grid">
           <div class="delivery__card delivery__card--main">
-            <h3 class="delivery__card-title">Доставка по России</h3>
-            <p class="delivery__card-text">
+            <h3 class="delivery__card-title editable-text __id=1">Доставка по России</h3>
+            <p class="delivery__card-text editable-text __id=2">
               Поможем вам организовать доставку купленного оборудования в любую точку России!
               Мы предлагаем транспортировку грузов автомобильным транспортом, сотрудничая с ведущими транспортными
               компаниями, среди которых «ПЭК», «Деловые линии», «Энергия», «Луч» и другие.
             </p>
-            <p class="delivery__card-text">
+            <p class="delivery__card-text editable-text __id=3">
               Наши специалисты с радостью подберут для вас наиболее экономичные варианты доставки и согласуют с вами
               все условия. Если у вас возникнут вопросы по организации доставки, пожалуйста, свяжитесь с нашим
               менеджером.
             </p>
             <div class="delivery__notice">
-              <p class="delivery__notice-text">
+              <p class="delivery__notice-text editable-text">
                 Обратите внимание, что доставка до филиала транспортной компании осуществляется бесплатно!
               </p>
             </div>
           </div>
 
           <div class="delivery__card delivery__card--companies">
-            <h3 class="delivery__card-title">Транспортные компании</h3>
-            <ul class="delivery__companies-list">
-              <li class="delivery__company-item">ПЭК</li>
-              <li class="delivery__company-item">Деловые линии</li>
-              <li class="delivery__company-item">Энергия</li>
-              <li class="delivery__company-item">Луч</li>
+            <h3 class="delivery__card-title editable-text __id=4">Транспортные компании</h3>
+            <ul class="delivery__companies-list editable-list">
+              <li class="delivery__company-item">
+                <h4 class="editable-text">ПЭК</h4>
+              </li>
+              <li class="delivery__company-item">
+                <h4 class="editable-text">Деловые линии</h4>
+              </li>
+              <li class="delivery__company-item">
+                <h4 class="editable-text">Энергия</h4>
+              </li>
+              <li class="delivery__company-item">
+                <h4 class="editable-text">Луч</h4>
+              </li>
             </ul>
           </div>
 
           <div class="delivery__card delivery__card--pickup">
-            <h3 class="delivery__card-title">Самовывоз</h3>
-            <p class="delivery__card-text">
+            <h3 class="delivery__card-title editable-text __id=5">Самовывоз</h3>
+            <p class="delivery__card-text editable-text __id=6">
               У вас есть возможность забрать груз самостоятельно. В этом случае необходимо согласовать дату приезда и
               не забыть взять с собой доверенность на получение. Мы также готовы бесплатно загрузить оборудование на
               нашем складе.
@@ -291,31 +373,41 @@
           </div>
 
           <div class="delivery__card delivery__card--requirements">
-            <h3 class="delivery__card-title">Данные для доставки</h3>
-            <ul class="delivery__checklist">
+            <h3 class="delivery__card-title editable-text __id=7">Данные для доставки</h3>
+            <ul class="delivery__checklist editable-list">
               <li class="delivery__checklist-item">
                 <span class="delivery__checklist-checkbox"></span>
-                <span class="delivery__checklist-text">Точный адрес места разгрузки</span>
+                <span class="delivery__checklist-text editable-text">
+                  Точный адрес места разгрузки
+                </span>
               </li>
 
               <li class="delivery__checklist-item">
                 <span class="delivery__checklist-checkbox"></span>
-                <span class="delivery__checklist-text">Контактное лицо</span>
+                <span class="delivery__checklist-text editable-text">
+                  Контактное лицо
+                </span>
               </li>
 
               <li class="delivery__checklist-item">
                 <span class="delivery__checklist-checkbox"></span>
-                <span class="delivery__checklist-text">Номер телефона для связи (рекомендуется несколько номеров)</span>
+                <span class="delivery__checklist-text editable-text">
+                  Номер телефона для связи (рекомендуется несколько номеров)
+                </span>
               </li>
 
               <li class="delivery__checklist-item">
                 <span class="delivery__checklist-checkbox"></span>
-                <span class="delivery__checklist-text">Желаемая дата прибытия груза</span>
+                <span class="delivery__checklist-text editable-text">
+                  Желаемая дата прибытия груза
+                </span>
               </li>
 
               <li class="delivery__checklist-item">
                 <span class="delivery__checklist-checkbox"></span>
-                <span class="delivery__checklist-text">Возможность разгрузки в выходные и праздничные дни</span>
+                <span class="delivery__checklist-text editable-text">
+                  Возможность разгрузки в выходные и праздничные дни
+                </span>
               </li>
             </ul>
           </div>
@@ -323,19 +415,21 @@
       </div>
     </section>
 
-    <section class="faq reveal">
-      <div class="container">
-        <h2 class="faq__title">Часто задаваемые вопросы</h2>
+    <hr class="divider">
 
-        <ul class="faq__list">
+    <section class="faq">
+      <div class="container">
+        <h2 class="faq__title editable-text">Часто задаваемые вопросы</h2>
+
+        <ul class="faq__list editable-list">
           <li class="faq__item">
             <button class="faq__question" type="button" aria-expanded="false">
-              <span class="faq__question-text">Какие сроки изготовления оборудования?</span>
+              <span class="faq__question-text editable-text">Какие сроки изготовления оборудования?</span>
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__answer">
               <div class="faq__answer-wrapper">
-                <p class="faq__answer-text">
+                <p class="faq__answer-text editable-text">
                   Сроки изготовления зависят от типа и сложности оборудования. Стандартное оборудование, такое как
                   ленточные конвейеры и измельчители, изготавливаются в течение 15-30 рабочих дней. Индивидуальные
                   заказы
@@ -348,12 +442,12 @@
 
           <li class="faq__item">
             <button class="faq__question" type="button" aria-expanded="false">
-              <span class="faq__question-text">Какие способы оплаты вы принимаете?</span>
+              <span class="faq__question-text editable-text">Какие способы оплаты вы принимаете?</span>
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__answer">
               <div class="faq__answer-wrapper">
-                <p class="faq__answer-text">
+                <p class="faq__answer-text editable-text">
                   Мы работаем как с юридическими, так и с физическими лицами. Для юридических лиц доступна оплата по
                   безналичному расчету на основании договора и счета. Физические лица могут оплатить заказ банковским
                   переводом. Возможна поэтапная оплата: предоплата 50% для запуска производства и оставшиеся 50% перед
@@ -365,12 +459,12 @@
 
           <li class="faq__item">
             <button class="faq__question" type="button" aria-expanded="false">
-              <span class="faq__question-text">Предоставляется ли гарантия на оборудование?</span>
+              <span class="faq__question-text editable-text">Предоставляется ли гарантия на оборудование?</span>
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__answer">
               <div class="faq__answer-wrapper">
-                <p class="faq__answer-text">
+                <p class="faq__answer-text editable-text">
                   Да, на всё наше оборудование предоставляется гарантия. Стандартный гарантийный срок составляет 12
                   месяцев с момента ввода оборудования в эксплуатацию или 18 месяцев с момента отгрузки (в зависимости
                   от
@@ -383,12 +477,12 @@
 
           <li class="faq__item">
             <button class="faq__question" type="button" aria-expanded="false">
-              <span class="faq__question-text">Как организована доставка?</span>
+              <span class="faq__question-text editable-text">Как организована доставка?</span>
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__answer">
               <div class="faq__answer-wrapper">
-                <p class="faq__answer-text">
+                <p class="faq__answer-text editable-text">
                   Мы организуем доставку оборудования по всей России и странам СНГ через надежные транспортные компании
                   (ПЭК, Деловые линии, Энергия, Луч). Доставка до терминала транспортной компании осуществляется
                   бесплатно. Также доступна опция самовывоза с нашего склада с бесплатной погрузкой. Наши специалисты
@@ -400,12 +494,13 @@
 
           <li class="faq__item">
             <button class="faq__question" type="button" aria-expanded="false">
-              <span class="faq__question-text">Предоставляете ли вы услуги по обслуживанию оборудования?</span>
+              <span class="faq__question-text editable-text">Предоставляете ли вы услуги по обслуживанию
+                оборудования?</span>
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__answer">
               <div class="faq__answer-wrapper">
-                <p class="faq__answer-text">
+                <p class="faq__answer-text editable-text">
                   Да, мы предоставляем полный спектр услуг по техническому обслуживанию и ремонту нашего оборудования. В
                   наличии постоянный склад запасных частей и комплектующих. При необходимости возможен выезд наших
                   специалистов для проведения пусконаладочных работ, обучения персонала и технического обслуживания на
@@ -417,12 +512,12 @@
 
           <li class="faq__item">
             <button class="faq__question" type="button" aria-expanded="false">
-              <span class="faq__question-text">Возможен ли выезд специалиста для консультации?</span>
+              <span class="faq__question-text editable-text">Возможен ли выезд специалиста для консультации?</span>
               <span class="faq__icon" aria-hidden="true"></span>
             </button>
             <div class="faq__answer">
               <div class="faq__answer-wrapper">
-                <p class="faq__answer-text">
+                <p class="faq__answer-text editable-text">
                   Да, наши инженеры могут выехать на ваш объект для проведения консультации, оценки условий эксплуатации
                   и
                   помощи в подборе оптимального оборудования. Выезд специалиста в пределах Челябинской области
@@ -435,23 +530,27 @@
       </div>
     </section>
 
-    <article class="cta reveal">
+    <hr class="divider">
+
+    <article class="cta">
       <div class="container">
         <div class="cta__content">
-          <h2 class="cta__title">Остались вопросы?</h2>
-          <p class="cta__description">
+          <h2 class="cta__title editable-text">Остались вопросы?</h2>
+          <p class="cta__description editable-text">
             Не нашли нужную информацию или хотите обсудить детали проекта? Оставьте заявку — наши специалисты свяжутся
             с вами, ответят на все вопросы и помогут подобрать оптимальное решение для вашего бизнеса.
           </p>
-          <a class="cta__button" href="#">Оставить заявку</a>
+          <a class="cta__button editable-link" href="./cart.html">Оставить заявку</a>
         </div>
       </div>
     </article>
 
-    <article class="contacts reveal">
+    <hr class="divider">
+
+    <article class="contacts">
       <div class="container">
         <div class="contacts__card">
-          <h2 class="contacts__title">Контакты</h2>
+          <h2 class="contacts__title editable-text">Контакты</h2>
 
           <div class="contacts__info">
             <!-- Телефоны -->
@@ -464,10 +563,10 @@
                 </svg>
               </div>
               <div class="contacts__info-content">
-                <h3 class="contacts__info-label">Телефоны</h3>
-                <ul class="contacts__list">
-                  <li><a class="contacts__link" href="tel:+79120438833">+7 (912) 043-88-33</a></li>
-                  <li><a class="contacts__link" href="tel:+79127726599">+7 (912) 772-65-99</a></li>
+                <h3 class="contacts__info-label editable-text __id=8">Телефоны</h3>
+                <ul class="contacts__list contacts__list--phones editable-list">
+                  <li><a class="contacts__link editable-link" href="tel:+79120438833">+7 (912) 043-88-33</a></li>
+                  <li><a class="contacts__link editable-link" href="tel:+79127726599">+7 (912) 772-65-99</a></li>
                 </ul>
               </div>
             </div>
@@ -482,10 +581,11 @@
                 </svg>
               </div>
               <div class="contacts__info-content">
-                <h3 class="contacts__info-label">Email</h3>
-                <ul class="contacts__list">
-                  <li><a class="contacts__link" href="mailto:TdAOMZ@mail.ru">TdAOMZ@mail.ru</a></li>
-                  <li><a class="contacts__link" href="mailto:sovadrobim@gmail.com">sovadrobim@gmail.com</a></li>
+                <h3 class="contacts__info-label editable-text __id=9">Email</h3>
+                <ul class="contacts__list contacts__list--emails editable-list">
+                  <li><a class="contacts__link editable-link" href="mailto:TdAOMZ@mail.ru">TdAOMZ@mail.ru</a></li>
+                  <li><a class="contacts__link editable-link"
+                      href="mailto:sovadrobim@gmail.com">sovadrobim@gmail.com</a></li>
                 </ul>
               </div>
             </div>
@@ -500,8 +600,8 @@
                 </svg>
               </div>
               <div class="contacts__info-content">
-                <h3 class="contacts__info-label">Адрес</h3>
-                <p class="contacts__info-text">Челябинская обл, г Аша, <br>ул Узкоколейная, 1А</p>
+                <h3 class="contacts__info-label editable-text __id=10">Адрес</h3>
+                <p class="contacts__info-text editable-text __id=11">Челябинская обл, г Аша, <br>ул Узкоколейная, 1А</p>
               </div>
             </div>
 
@@ -515,19 +615,19 @@
                 </svg>
               </div>
               <div class="contacts__info-content">
-                <h3 class="contacts__info-label">Режим работы</h3>
-                <p class="contacts__info-text">Пн-Пт: 08:00 - 17:00</p>
-                <p class="contacts__info-text">Перерыв: 12:00 - 13:00</p>
-                <p class="contacts__info-text">Сб-Вс: Выходной</p>
+                <h3 class="contacts__info-label editable-text __id=12">Режим работы</h3>
+                <p class="contacts__info-text editable-text __id=13">Пн-Пт: 08:00 - 17:00</p>
+                <p class="contacts__info-text editable-text __id=14">Перерыв: 12:00 - 13:00</p>
+                <p class="contacts__info-text editable-text __id=15">Сб-Вс: Выходной</p>
               </div>
             </div>
 
             <!-- Мессенджеры -->
             <div class="contacts__messengers">
-              <h3 class="contacts__messengers-label">Напишите нам</h3>
-              <ul class="contacts__messengers-links">
+              <h3 class="contacts__messengers-label editable-text">Напишите нам</h3>
+              <ul class="contacts__messengers-links editable-list">
                 <li>
-                  <a class="contacts__messenger-link contacts__messenger-link--telegram"
+                  <a class="contacts__messenger-link contacts__messenger-link--telegram editable-link"
                     href="https://t.me/+79120438833" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -538,7 +638,7 @@
                   </a>
                 </li>
                 <li>
-                  <a class="contacts__messenger-link contacts__messenger-link--whatsapp"
+                  <a class="contacts__messenger-link contacts__messenger-link--whatsapp editable-link"
                     href="https://wa.me/79120438833" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -567,36 +667,36 @@
         <!-- Левая часть: логотип, слоган, режим работы -->
         <div class="footer__brand">
           <div class="footer__brand-top">
-            <p class="footer__logo">ООО «АОМЗ»</p>
-            <p class="footer__tagline">Производство промышленного <br>оборудования</p>
+            <p class="footer__logo editable-text">ООО «АОМЗ»</p>
+            <p class="footer__tagline editable-text">Производство промышленного <br>оборудования</p>
           </div>
 
           <div class="footer__working-hours">
-            <p class="footer__working-label">Режим работы:</p>
-            <p class="footer__working-time">Пн-Пт: 08:00 - 17:00</p>
-            <p class="footer__working-time">Перерыв: 12:00 - 13:00</p>
-            <p class="footer__working-time">Сб-Вс: Выходной</p>
+            <p class="footer__working-label editable-text">Режим работы:</p>
+            <p class="footer__working-time footer__working-time--works editable-text">Пн-Пт: 08:00 - 17:00</p>
+            <p class="footer__working-time footer__working-time--break editable-text">Перерыв: 12:00 - 13:00</p>
+            <p class="footer__working-time footer__working-time--dayoff editable-text">Сб-Вс: Выходной</p>
           </div>
         </div>
 
         <!-- Навигация -->
         <div class="footer__section">
           <nav class="footer__nav">
-            <ul class="footer__nav-list">
+            <ul class="footer__nav-list editable-list">
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="/" aria-current="page">Главная</a>
+                <a class="footer__nav-link editable-link" href="./" aria-current="page">Главная</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="#trust">О нас</a>
+                <a class="footer__nav-link editable-link" href="./about.html">О нас</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="#catalog">Каталог</a>
+                <a class="footer__nav-link editable-link" href="./catalog.html">Каталог</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="#leasing">Лизинг</a>
+                <a class="footer__nav-link editable-link" href="./leasing.html">Лизинг</a>
               </li>
               <li class="footer__nav-item">
-                <a class="footer__nav-link" href="#contacts">Контакты</a>
+                <a class="footer__nav-link editable-link" href="./contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -604,28 +704,28 @@
 
         <!-- Контакты -->
         <div class="footer__section">
-          <ul class="footer__phones">
+          <ul class="footer__phones editable-list">
             <li class="footer__phone-item">
-              <a class="footer__phone-link" href="tel:+79120438833">+7 (912) 043-88-33</a>
+              <a class="footer__phone-link editable-link" href="tel:+79120438833">+7 (912) 043-88-33</a>
             </li>
             <li class="footer__phone-item">
-              <a class="footer__phone-link" href="tel:+79127726599">+7 (912) 772-65-99</a>
+              <a class="footer__phone-link editable-link" href="tel:+79127726599">+7 (912) 772-65-99</a>
             </li>
           </ul>
 
-          <ul class="footer__emails">
+          <ul class="footer__emails editable-list">
             <li class="footer__email-item">
-              <a class="footer__email-link" href="mailto:TdAOMZ@mail.ru">TdAOMZ@mail.ru</a>
+              <a class="footer__email-link editable-link" href="mailto:TdAOMZ@mail.ru">TdAOMZ@mail.ru</a>
             </li>
             <li class="footer__email-item">
-              <a class="footer__email-link" href="mailto:sovadrobim@gmail.com">sovadrobim@gmail.com</a>
+              <a class="footer__email-link editable-link" href="mailto:sovadrobim@gmail.com">sovadrobim@gmail.com</a>
             </li>
           </ul>
 
-          <ul class="footer__social">
+          <ul class="footer__social editable-list">
             <li>
-              <a class="footer__social-link footer__social-link--telegram" href="https://t.me/+79120438833"
-                target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+              <a class="footer__social-link footer__social-link--telegram editable-link"
+                href="https://t.me/+79120438833" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
@@ -634,8 +734,8 @@
               </a>
             </li>
             <li>
-              <a class="footer__social-link footer__social-link--whatsapp" href="https://wa.me/79120438833"
-                target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <a class="footer__social-link footer__social-link--whatsapp editable-link"
+                href="https://wa.me/79120438833" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.15l-.3-.17-3.12.82.83-3.04-.2-.32a8.188 8.188 0 01-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14-.01-.3-.01-.47-.01z"
@@ -648,31 +748,35 @@
 
         <!-- Информация -->
         <div class="footer__section footer__section--info">
-          <ul class="footer__info-list">
+          <ul class="footer__info-list editable-list">
             <li class="footer__info-item">
-              <span class="footer__info-label">ОГРН:</span>
-              <span class="footer__info-value">1187456037680</span>
+              <span class="footer__info-label editable-text">ОГРН:</span>
+              <span class="footer__info-value editable-text">1187456037680</span>
             </li>
             <li class="footer__info-item">
-              <span class="footer__info-label">ИНН:</span>
-              <span class="footer__info-value">7457009326</span>
+              <span class="footer__info-label editable-text">ИНН:</span>
+              <span class="footer__info-value editable-text">7457009326</span>
             </li>
             <li class="footer__info-item">
-              <span class="footer__info-label">КПП:</span>
-              <span class="footer__info-value">745701001</span>
+              <span class="footer__info-label editable-text">КПП:</span>
+              <span class="footer__info-value editable-text">745701001</span>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="footer__bottom">
-        <p class="footer__copyright">© 2026 ООО «Ашинский опытно-механический завод». Все права защищены.</p>
-        <a class="footer__policy" href="#privacy">Политика конфиденциальности</a>
-      </div>
+      <a class="footer__policy editable-link" href="./privacy-policy.html">Политика конфиденциальности</a>
+      <p class="footer__bottom-text footer__bottom-text--disclamer editable-text">
+        Сайт носит информационный характер и не является публичной офертой.
+      </p>
+      <p class="footer__bottom-text footer__bottom-text--copyright editable-text">
+        © 2026 ООО «Ашинский опытно-механический завод». Все права защищены.
+      </p>
     </div>
   </footer>
   <button class="scroll-top" type="button" aria-label="Наверх"></button>
   <script src="./scripts/main.js" type="module"></script>
+  <script src="./edit-main.js" type="module"></script>
 </body>
 
 </html>
